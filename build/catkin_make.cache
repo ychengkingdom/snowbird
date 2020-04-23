@@ -1,2 +1,2 @@
-
+rplidar_ros
 -DCATKIN_DEVEL_PREFIX=/home/pi/MyLocalGit/snowbird/devel -DCMAKE_INSTALL_PREFIX=/home/pi/MyLocalGit/snowbird/install -G Unix Makefiles
