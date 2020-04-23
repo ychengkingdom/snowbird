@@ -1,2 +1,2 @@
-rplidar_ros
+actuator:hall_sensor:rplidar_ros:ultra_sonic
 -DCATKIN_DEVEL_PREFIX=/home/pi/MyLocalGit/snowbird/devel -DCMAKE_INSTALL_PREFIX=/home/pi/MyLocalGit/snowbird/install -G Unix Makefiles

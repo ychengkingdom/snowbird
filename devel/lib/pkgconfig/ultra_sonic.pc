@@ -1,0 +1,8 @@
+prefix=/home/pi/MyLocalGit/snowbird/devel
+
+Name: ultra_sonic
+Description: Description of ultra_sonic
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
