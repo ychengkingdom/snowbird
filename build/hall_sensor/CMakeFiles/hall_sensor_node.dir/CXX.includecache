@@ -6,6 +6,18 @@
 
 #IncludeRegexTransform: 
 
+/home/pi/MyLocalGit/snowbird/src/hall_sensor/include/hall_sensor/hallSensor.h
+hall_sensor_cfg.h
+/home/pi/MyLocalGit/snowbird/src/hall_sensor/include/hall_sensor/hall_sensor_cfg.h
+sys/time.h
+-
+
+/home/pi/MyLocalGit/snowbird/src/hall_sensor/include/hall_sensor/hall_sensor_cfg.h
+wiringPi.h
+/home/pi/MyLocalGit/snowbird/src/hall_sensor/include/hall_sensor/wiringPi.h
+bcm2835.h
+/home/pi/MyLocalGit/snowbird/src/hall_sensor/include/hall_sensor/bcm2835.h
+
 /home/pi/MyLocalGit/snowbird/src/hall_sensor/src/hallSensor.cpp
 hallSensor.h
 /home/pi/MyLocalGit/snowbird/src/hall_sensor/src/hallSensor.h
@@ -16,19 +28,7 @@ ros/ros.h
 ros/ros.h
 -
 hallSensor.h
-/home/pi/MyLocalGit/snowbird/src/hall_sensor/src/hallSensor.h
-
-/home/pi/snowbird/src/hall_sensor/include/hall_sensor/hallSensor.h
-hall_sensor_cfg.h
-/home/pi/snowbird/src/hall_sensor/include/hall_sensor/hall_sensor_cfg.h
-sys/time.h
 -
-
-/home/pi/snowbird/src/hall_sensor/include/hall_sensor/hall_sensor_cfg.h
-wiringPi.h
-/home/pi/snowbird/src/hall_sensor/include/hall_sensor/wiringPi.h
-bcm2835.h
-/home/pi/snowbird/src/hall_sensor/include/hall_sensor/bcm2835.h
 
 /opt/ros/melodic/include/ros/advertise_options.h
 ros/forwards.h

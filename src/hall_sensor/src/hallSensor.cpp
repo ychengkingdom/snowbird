@@ -36,16 +36,14 @@ int whlPulCnt(int whlPulID)
    return whlPul;
 }
 
-void whlSpeed()
+void whlPulCntReset(int whlPulID)
 {
-
-   //gettimeofday(&tv1, NULL);
-   stop = micros();/*current systime in usec*/
-
+   whlPul = 0;
 }
+
 /***********************************************************************
  * Yc, Mar 13, 2020, Add file description and modulize orgnization
- * 
+ * Yc, Apr 23, 2020, Add the wheel speed calculation
  * 
  * 
  * 

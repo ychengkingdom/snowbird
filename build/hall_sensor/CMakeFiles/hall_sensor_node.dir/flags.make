@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"hall_sensor\"
 
-CXX_INCLUDES = -I/home/pi/MyLocalGit/snowbird/src/hall_sensor/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/pi/snowbird/src/hall_sensor/include/hall_sensor 
+CXX_INCLUDES = -I/home/pi/MyLocalGit/snowbird/src/hall_sensor/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/pi/MyLocalGit/snowbird/src/hall_sensor/include/hall_sensor 
 
