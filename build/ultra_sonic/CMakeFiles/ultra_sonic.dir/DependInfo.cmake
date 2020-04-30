@@ -4,8 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/pi/MyLocalGit/snowbird/src/ultra_sonic/src/ultraSonic.cpp" "/home/pi/MyLocalGit/snowbird/build/ultra_sonic/CMakeFiles/ultra_sonic_node.dir/src/ultraSonic.cpp.o"
-  "/home/pi/MyLocalGit/snowbird/src/ultra_sonic/src/ultra_sonic_node.cpp" "/home/pi/MyLocalGit/snowbird/build/ultra_sonic/CMakeFiles/ultra_sonic_node.dir/src/ultra_sonic_node.cpp.o"
+  "/home/pi/MyLocalGit/snowbird/src/ultra_sonic/src/ultraSonic.cpp" "/home/pi/MyLocalGit/snowbird/build/ultra_sonic/CMakeFiles/ultra_sonic.dir/src/ultraSonic.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

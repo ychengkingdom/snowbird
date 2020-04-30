@@ -120,7 +120,7 @@ include_directories(
  include
   ${catkin_INCLUDE_DIRS}
 /usr/include
-/home/pi/snowbird/src/ultra_sonic/include/ultra_sonic
+/home/pi/MyLocalGit/snowbird/src/ultra_sonic/include/ultra_sonic
 )
 
 link_directories(
@@ -130,9 +130,9 @@ link_directories(
 #  /usr/local/lib
 )
 ## Declare a C++ library
-# add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/ultra_sonic.cpp
-# )
+ add_library(${PROJECT_NAME}
+ src/ultraSonic.cpp
+ )
 
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries

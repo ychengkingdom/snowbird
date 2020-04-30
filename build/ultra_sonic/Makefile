@@ -68,6 +68,18 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -123,18 +135,6 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
 # The main all target
 all: cmake_check_build_system
 	cd /home/pi/MyLocalGit/snowbird/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/pi/MyLocalGit/snowbird/build/CMakeFiles /home/pi/MyLocalGit/snowbird/build/ultra_sonic/CMakeFiles/progress.marks
@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+ultra_sonic/CMakeFiles/ultra_sonic.dir/rule:
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f CMakeFiles/Makefile2 ultra_sonic/CMakeFiles/ultra_sonic.dir/rule
+.PHONY : ultra_sonic/CMakeFiles/ultra_sonic.dir/rule
+
+# Convenience name for target.
+ultra_sonic: ultra_sonic/CMakeFiles/ultra_sonic.dir/rule
+
+.PHONY : ultra_sonic
+
+# fast build rule for target.
+ultra_sonic/fast:
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f ultra_sonic/CMakeFiles/ultra_sonic.dir/build.make ultra_sonic/CMakeFiles/ultra_sonic.dir/build
+.PHONY : ultra_sonic/fast
+
+# Convenience name for target.
 ultra_sonic/CMakeFiles/ultra_sonic_node.dir/rule:
 	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f CMakeFiles/Makefile2 ultra_sonic/CMakeFiles/ultra_sonic_node.dir/rule
 .PHONY : ultra_sonic/CMakeFiles/ultra_sonic_node.dir/rule
@@ -188,6 +203,7 @@ src/ultraSonic.o: src/ultraSonic.cpp.o
 
 # target to build an object file
 src/ultraSonic.cpp.o:
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f ultra_sonic/CMakeFiles/ultra_sonic.dir/build.make ultra_sonic/CMakeFiles/ultra_sonic.dir/src/ultraSonic.cpp.o
 	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f ultra_sonic/CMakeFiles/ultra_sonic_node.dir/build.make ultra_sonic/CMakeFiles/ultra_sonic_node.dir/src/ultraSonic.cpp.o
 .PHONY : src/ultraSonic.cpp.o
 
@@ -197,6 +213,7 @@ src/ultraSonic.i: src/ultraSonic.cpp.i
 
 # target to preprocess a source file
 src/ultraSonic.cpp.i:
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f ultra_sonic/CMakeFiles/ultra_sonic.dir/build.make ultra_sonic/CMakeFiles/ultra_sonic.dir/src/ultraSonic.cpp.i
 	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f ultra_sonic/CMakeFiles/ultra_sonic_node.dir/build.make ultra_sonic/CMakeFiles/ultra_sonic_node.dir/src/ultraSonic.cpp.i
 .PHONY : src/ultraSonic.cpp.i
 
@@ -206,6 +223,7 @@ src/ultraSonic.s: src/ultraSonic.cpp.s
 
 # target to generate assembly for a file
 src/ultraSonic.cpp.s:
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f ultra_sonic/CMakeFiles/ultra_sonic.dir/build.make ultra_sonic/CMakeFiles/ultra_sonic.dir/src/ultraSonic.cpp.s
 	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f ultra_sonic/CMakeFiles/ultra_sonic_node.dir/build.make ultra_sonic/CMakeFiles/ultra_sonic_node.dir/src/ultraSonic.cpp.s
 .PHONY : src/ultraSonic.cpp.s
 
@@ -243,13 +261,14 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
+	@echo "... install"
+	@echo "... ultra_sonic"
 	@echo "... install/local"
-	@echo "... test"
 	@echo "... ultra_sonic_node"
+	@echo "... test"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... list_install_components"
-	@echo "... install"
 	@echo "... src/ultraSonic.o"
 	@echo "... src/ultraSonic.i"
 	@echo "... src/ultraSonic.s"

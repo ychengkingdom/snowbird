@@ -18,15 +18,14 @@ int main(int argc, char** argv)
    /*Init wiringPi for GPIO*/
    wiringPiSetup();
    /*Init ultra sonic*/
-   initUS_015();
+   UltraSonic frUltra(TRIG, ECHO_1);
+   //UltraSonic reUltra(TRIG, ECHO_2);
 
    while (ros::ok())
    {
       /*Implementation of ultra sonic*/
-      dis_fr = disUS_015(ECHO_1);
-      #if 0
-      dis_re = disUS_015(ECHO_2);
-      #endif
+      dis_fr = frUltra.disUS_015();
+      //dis_re = reUltra.disUS_015();
       ROS_INFO("front dis: %0.2f; rear dis: %0.2f", dis_fr, dis_re);
       /*gurantee the refresh period*/
       loop_rate.sleep();

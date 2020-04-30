@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libultra_sonic.so -o /home/pi/MyLocalGit/snowbird/devel/lib/libultra_sonic.so CMakeFiles/ultra_sonic.dir/src/ultraSonic.cpp.o  -L/home/pi/MyLocalGit/snowbird/src/ultra_sonic/include 

@@ -844,6 +844,19 @@ rplidarNode/fast:
 .PHONY : rplidarNode/fast
 
 #=============================================================================
+# Target rules for targets named ultra_sonic
+
+# Build rule for target.
+ultra_sonic: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ultra_sonic
+.PHONY : ultra_sonic
+
+# fast build rule for target.
+ultra_sonic/fast:
+	$(MAKE) -f ultra_sonic/CMakeFiles/ultra_sonic.dir/build.make ultra_sonic/CMakeFiles/ultra_sonic.dir/build
+.PHONY : ultra_sonic/fast
+
+#=============================================================================
 # Target rules for targets named ultra_sonic_node
 
 # Build rule for target.
@@ -921,6 +934,7 @@ help:
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... rplidarNode"
+	@echo "... ultra_sonic"
 	@echo "... ultra_sonic_node"
 .PHONY : help
 

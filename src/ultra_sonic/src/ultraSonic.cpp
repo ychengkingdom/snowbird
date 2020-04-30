@@ -6,38 +6,44 @@
 #include <ros/ros.h>
 #include "ultraSonic.h"
 
-/*Variables definition for ultra sonic*/
-struct timeval tv1;
-struct timeval tv2;
-
-long start, stop;
 /**************Function definitions for Ultra sonic********************/
-void initUS_015(void)
+
+UltraSonic::UltraSonic(int trigPin, int echoPin)
 {
-   pinMode(TRIG, OUTPUT);
-   pinMode(ECHO_1, INPUT);
-   pinMode(ECHO_2, INPUT);
+   m_trigPin = trigPin;
+   m_echoPin = echoPin;
+   gettimeofday(&m_tv1, NULL);
+   gettimeofday(&m_tv2, NULL);
+   m_start = 0;
+   m_stop = 0;
+
+   pinMode(m_trigPin, OUTPUT);
+   pinMode(m_echoPin, INPUT);
 }
 
-int disUS_015(int echoID)
+UltraSonic::~UltraSonic()
+{
+}
+
+int UltraSonic::disUS_015()
 {
    float dis;
-   digitalWrite(TRIG, HIGH);
+   digitalWrite(m_trigPin, HIGH);
    delayMicroseconds(TRIG_TIME);
-   digitalWrite(TRIG, LOW);
+   digitalWrite(m_trigPin, LOW);
 
-   while(!(digitalRead(echoID) == 1))
+   while(!(digitalRead(m_echoPin) == 1))
    {
-      gettimeofday(&tv1, NULL);
+      gettimeofday(&m_tv1, NULL);
    }
-   while(!(digitalRead(echoID) == 0))
+   while(!(digitalRead(m_echoPin) == 0))
    {
-      gettimeofday(&tv2, NULL);
+      gettimeofday(&m_tv2, NULL);
    }
-   start = tv1.tv_sec * 1000000 + tv1.tv_usec;
-   stop  = tv2.tv_sec * 1000000 + tv2.tv_usec;
+   m_start = m_tv1.tv_sec * 1000000 + m_tv1.tv_usec;
+   m_stop  = m_tv2.tv_sec * 1000000 + m_tv2.tv_usec;
 
-   dis = (float)(stop - start) / 1000000*34000 / 2;
+   dis = (float)(m_stop - m_start) / 1000000*34000 / 2;
 
    return dis;
 }

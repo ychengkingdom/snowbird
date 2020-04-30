@@ -100,10 +100,11 @@
 /home/pi/MyLocalGit/snowbird/build/rplidar_ros/CMakeFiles/edit_cache.dir
 /home/pi/MyLocalGit/snowbird/build/rplidar_ros/CMakeFiles/list_install_components.dir
 /home/pi/MyLocalGit/snowbird/build/ultra_sonic/CMakeFiles/install/strip.dir
+/home/pi/MyLocalGit/snowbird/build/ultra_sonic/CMakeFiles/install.dir
+/home/pi/MyLocalGit/snowbird/build/ultra_sonic/CMakeFiles/ultra_sonic.dir
 /home/pi/MyLocalGit/snowbird/build/ultra_sonic/CMakeFiles/install/local.dir
-/home/pi/MyLocalGit/snowbird/build/ultra_sonic/CMakeFiles/test.dir
 /home/pi/MyLocalGit/snowbird/build/ultra_sonic/CMakeFiles/ultra_sonic_node.dir
+/home/pi/MyLocalGit/snowbird/build/ultra_sonic/CMakeFiles/test.dir
 /home/pi/MyLocalGit/snowbird/build/ultra_sonic/CMakeFiles/edit_cache.dir
 /home/pi/MyLocalGit/snowbird/build/ultra_sonic/CMakeFiles/rebuild_cache.dir
 /home/pi/MyLocalGit/snowbird/build/ultra_sonic/CMakeFiles/list_install_components.dir
-/home/pi/MyLocalGit/snowbird/build/ultra_sonic/CMakeFiles/install.dir

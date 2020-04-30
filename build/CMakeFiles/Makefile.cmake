@@ -293,5 +293,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "rplidar_ros/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/DependInfo.cmake"
   "rplidar_ros/CMakeFiles/geometry_msgs_generate_messages_py.dir/DependInfo.cmake"
   "rplidar_ros/CMakeFiles/rplidarNode.dir/DependInfo.cmake"
+  "ultra_sonic/CMakeFiles/ultra_sonic.dir/DependInfo.cmake"
   "ultra_sonic/CMakeFiles/ultra_sonic_node.dir/DependInfo.cmake"
   )

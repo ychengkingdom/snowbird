@@ -1941,11 +1941,13 @@ clean: rplidar_ros/CMakeFiles/rplidarNode.dir/clean
 # Directory level rules for directory ultra_sonic
 
 # Convenience name for "all" pass in the directory.
+ultra_sonic/all: ultra_sonic/CMakeFiles/ultra_sonic.dir/all
 ultra_sonic/all: ultra_sonic/CMakeFiles/ultra_sonic_node.dir/all
 
 .PHONY : ultra_sonic/all
 
 # Convenience name for "clean" pass in the directory.
+ultra_sonic/clean: ultra_sonic/CMakeFiles/ultra_sonic.dir/clean
 ultra_sonic/clean: ultra_sonic/CMakeFiles/ultra_sonic_node.dir/clean
 
 .PHONY : ultra_sonic/clean
@@ -1954,6 +1956,43 @@ ultra_sonic/clean: ultra_sonic/CMakeFiles/ultra_sonic_node.dir/clean
 ultra_sonic/preinstall:
 
 .PHONY : ultra_sonic/preinstall
+
+#=============================================================================
+# Target rules for target ultra_sonic/CMakeFiles/ultra_sonic.dir
+
+# All Build rule for target.
+ultra_sonic/CMakeFiles/ultra_sonic.dir/all:
+	$(MAKE) -f ultra_sonic/CMakeFiles/ultra_sonic.dir/build.make ultra_sonic/CMakeFiles/ultra_sonic.dir/depend
+	$(MAKE) -f ultra_sonic/CMakeFiles/ultra_sonic.dir/build.make ultra_sonic/CMakeFiles/ultra_sonic.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/MyLocalGit/snowbird/build/CMakeFiles --progress-num=33,34 "Built target ultra_sonic"
+.PHONY : ultra_sonic/CMakeFiles/ultra_sonic.dir/all
+
+# Include target in all.
+all: ultra_sonic/CMakeFiles/ultra_sonic.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ultra_sonic/CMakeFiles/ultra_sonic.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/MyLocalGit/snowbird/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 ultra_sonic/CMakeFiles/ultra_sonic.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/MyLocalGit/snowbird/build/CMakeFiles 0
+.PHONY : ultra_sonic/CMakeFiles/ultra_sonic.dir/rule
+
+# Convenience name for target.
+ultra_sonic: ultra_sonic/CMakeFiles/ultra_sonic.dir/rule
+
+.PHONY : ultra_sonic
+
+# clean rule for target.
+ultra_sonic/CMakeFiles/ultra_sonic.dir/clean:
+	$(MAKE) -f ultra_sonic/CMakeFiles/ultra_sonic.dir/build.make ultra_sonic/CMakeFiles/ultra_sonic.dir/clean
+.PHONY : ultra_sonic/CMakeFiles/ultra_sonic.dir/clean
+
+# clean rule for target.
+clean: ultra_sonic/CMakeFiles/ultra_sonic.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Target rules for target ultra_sonic/CMakeFiles/ultra_sonic_node.dir
@@ -1977,7 +2016,7 @@ ultra_sonic/CMakeFiles/ultra_sonic_node.dir/all: actuator/CMakeFiles/rosgraph_ms
 ultra_sonic/CMakeFiles/ultra_sonic_node.dir/all: actuator/CMakeFiles/std_msgs_generate_messages_eus.dir/all
 	$(MAKE) -f ultra_sonic/CMakeFiles/ultra_sonic_node.dir/build.make ultra_sonic/CMakeFiles/ultra_sonic_node.dir/depend
 	$(MAKE) -f ultra_sonic/CMakeFiles/ultra_sonic_node.dir/build.make ultra_sonic/CMakeFiles/ultra_sonic_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/MyLocalGit/snowbird/build/CMakeFiles --progress-num=33,34,35 "Built target ultra_sonic_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/MyLocalGit/snowbird/build/CMakeFiles --progress-num=35,36,37 "Built target ultra_sonic_node"
 .PHONY : ultra_sonic/CMakeFiles/ultra_sonic_node.dir/all
 
 # Include target in all.
