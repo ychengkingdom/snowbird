@@ -70,29 +70,29 @@ hall_sensor/CMakeFiles/hall_sensor_node.dir/src/hall_sensor_node.cpp.s: cmake_fo
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hall_sensor_node.dir/src/hall_sensor_node.cpp.s"
 	cd /home/pi/MyLocalGit/snowbird/build/hall_sensor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/MyLocalGit/snowbird/src/hall_sensor/src/hall_sensor_node.cpp -o CMakeFiles/hall_sensor_node.dir/src/hall_sensor_node.cpp.s
 
-hall_sensor/CMakeFiles/hall_sensor_node.dir/src/hallSensor.cpp.o: hall_sensor/CMakeFiles/hall_sensor_node.dir/flags.make
-hall_sensor/CMakeFiles/hall_sensor_node.dir/src/hallSensor.cpp.o: /home/pi/MyLocalGit/snowbird/src/hall_sensor/src/hallSensor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/MyLocalGit/snowbird/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object hall_sensor/CMakeFiles/hall_sensor_node.dir/src/hallSensor.cpp.o"
-	cd /home/pi/MyLocalGit/snowbird/build/hall_sensor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hall_sensor_node.dir/src/hallSensor.cpp.o -c /home/pi/MyLocalGit/snowbird/src/hall_sensor/src/hallSensor.cpp
+hall_sensor/CMakeFiles/hall_sensor_node.dir/src/wheels.cpp.o: hall_sensor/CMakeFiles/hall_sensor_node.dir/flags.make
+hall_sensor/CMakeFiles/hall_sensor_node.dir/src/wheels.cpp.o: /home/pi/MyLocalGit/snowbird/src/hall_sensor/src/wheels.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/MyLocalGit/snowbird/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object hall_sensor/CMakeFiles/hall_sensor_node.dir/src/wheels.cpp.o"
+	cd /home/pi/MyLocalGit/snowbird/build/hall_sensor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hall_sensor_node.dir/src/wheels.cpp.o -c /home/pi/MyLocalGit/snowbird/src/hall_sensor/src/wheels.cpp
 
-hall_sensor/CMakeFiles/hall_sensor_node.dir/src/hallSensor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hall_sensor_node.dir/src/hallSensor.cpp.i"
-	cd /home/pi/MyLocalGit/snowbird/build/hall_sensor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/MyLocalGit/snowbird/src/hall_sensor/src/hallSensor.cpp > CMakeFiles/hall_sensor_node.dir/src/hallSensor.cpp.i
+hall_sensor/CMakeFiles/hall_sensor_node.dir/src/wheels.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hall_sensor_node.dir/src/wheels.cpp.i"
+	cd /home/pi/MyLocalGit/snowbird/build/hall_sensor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/MyLocalGit/snowbird/src/hall_sensor/src/wheels.cpp > CMakeFiles/hall_sensor_node.dir/src/wheels.cpp.i
 
-hall_sensor/CMakeFiles/hall_sensor_node.dir/src/hallSensor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hall_sensor_node.dir/src/hallSensor.cpp.s"
-	cd /home/pi/MyLocalGit/snowbird/build/hall_sensor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/MyLocalGit/snowbird/src/hall_sensor/src/hallSensor.cpp -o CMakeFiles/hall_sensor_node.dir/src/hallSensor.cpp.s
+hall_sensor/CMakeFiles/hall_sensor_node.dir/src/wheels.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hall_sensor_node.dir/src/wheels.cpp.s"
+	cd /home/pi/MyLocalGit/snowbird/build/hall_sensor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/MyLocalGit/snowbird/src/hall_sensor/src/wheels.cpp -o CMakeFiles/hall_sensor_node.dir/src/wheels.cpp.s
 
 # Object files for target hall_sensor_node
 hall_sensor_node_OBJECTS = \
 "CMakeFiles/hall_sensor_node.dir/src/hall_sensor_node.cpp.o" \
-"CMakeFiles/hall_sensor_node.dir/src/hallSensor.cpp.o"
+"CMakeFiles/hall_sensor_node.dir/src/wheels.cpp.o"
 
 # External object files for target hall_sensor_node
 hall_sensor_node_EXTERNAL_OBJECTS =
 
 /home/pi/MyLocalGit/snowbird/devel/lib/hall_sensor/hall_sensor_node: hall_sensor/CMakeFiles/hall_sensor_node.dir/src/hall_sensor_node.cpp.o
-/home/pi/MyLocalGit/snowbird/devel/lib/hall_sensor/hall_sensor_node: hall_sensor/CMakeFiles/hall_sensor_node.dir/src/hallSensor.cpp.o
+/home/pi/MyLocalGit/snowbird/devel/lib/hall_sensor/hall_sensor_node: hall_sensor/CMakeFiles/hall_sensor_node.dir/src/wheels.cpp.o
 /home/pi/MyLocalGit/snowbird/devel/lib/hall_sensor/hall_sensor_node: hall_sensor/CMakeFiles/hall_sensor_node.dir/build.make
 /home/pi/MyLocalGit/snowbird/devel/lib/hall_sensor/hall_sensor_node: /opt/ros/melodic/lib/libroscpp.so
 /home/pi/MyLocalGit/snowbird/devel/lib/hall_sensor/hall_sensor_node: /usr/lib/arm-linux-gnueabihf/libboost_filesystem.so

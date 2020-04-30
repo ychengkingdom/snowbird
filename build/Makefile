@@ -675,6 +675,19 @@ hall_sensor_node/fast:
 .PHONY : hall_sensor_node/fast
 
 #=============================================================================
+# Target rules for targets named hall_sensor
+
+# Build rule for target.
+hall_sensor: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hall_sensor
+.PHONY : hall_sensor
+
+# fast build rule for target.
+hall_sensor/fast:
+	$(MAKE) -f hall_sensor/CMakeFiles/hall_sensor.dir/build.make hall_sensor/CMakeFiles/hall_sensor.dir/build
+.PHONY : hall_sensor/fast
+
+#=============================================================================
 # Target rules for targets named sensor_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -895,6 +908,7 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... hall_sensor_node"
+	@echo "... hall_sensor"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... sensor_msgs_generate_messages_nodejs"

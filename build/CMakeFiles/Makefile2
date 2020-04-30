@@ -1409,11 +1409,13 @@ clean: actuator/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
 
 # Convenience name for "all" pass in the directory.
 hall_sensor/all: hall_sensor/CMakeFiles/hall_sensor_node.dir/all
+hall_sensor/all: hall_sensor/CMakeFiles/hall_sensor.dir/all
 
 .PHONY : hall_sensor/all
 
 # Convenience name for "clean" pass in the directory.
 hall_sensor/clean: hall_sensor/CMakeFiles/hall_sensor_node.dir/clean
+hall_sensor/clean: hall_sensor/CMakeFiles/hall_sensor.dir/clean
 
 .PHONY : hall_sensor/clean
 
@@ -1444,7 +1446,7 @@ hall_sensor/CMakeFiles/hall_sensor_node.dir/all: actuator/CMakeFiles/rosgraph_ms
 hall_sensor/CMakeFiles/hall_sensor_node.dir/all: actuator/CMakeFiles/std_msgs_generate_messages_eus.dir/all
 	$(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_node.dir/build.make hall_sensor/CMakeFiles/hall_sensor_node.dir/depend
 	$(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_node.dir/build.make hall_sensor/CMakeFiles/hall_sensor_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/MyLocalGit/snowbird/build/CMakeFiles --progress-num=19,20,21 "Built target hall_sensor_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/MyLocalGit/snowbird/build/CMakeFiles --progress-num=21,22,23 "Built target hall_sensor_node"
 .PHONY : hall_sensor/CMakeFiles/hall_sensor_node.dir/all
 
 # Include target in all.
@@ -1471,6 +1473,43 @@ hall_sensor/CMakeFiles/hall_sensor_node.dir/clean:
 
 # clean rule for target.
 clean: hall_sensor/CMakeFiles/hall_sensor_node.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target hall_sensor/CMakeFiles/hall_sensor.dir
+
+# All Build rule for target.
+hall_sensor/CMakeFiles/hall_sensor.dir/all:
+	$(MAKE) -f hall_sensor/CMakeFiles/hall_sensor.dir/build.make hall_sensor/CMakeFiles/hall_sensor.dir/depend
+	$(MAKE) -f hall_sensor/CMakeFiles/hall_sensor.dir/build.make hall_sensor/CMakeFiles/hall_sensor.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/MyLocalGit/snowbird/build/CMakeFiles --progress-num=19,20 "Built target hall_sensor"
+.PHONY : hall_sensor/CMakeFiles/hall_sensor.dir/all
+
+# Include target in all.
+all: hall_sensor/CMakeFiles/hall_sensor.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+hall_sensor/CMakeFiles/hall_sensor.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/MyLocalGit/snowbird/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 hall_sensor/CMakeFiles/hall_sensor.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/MyLocalGit/snowbird/build/CMakeFiles 0
+.PHONY : hall_sensor/CMakeFiles/hall_sensor.dir/rule
+
+# Convenience name for target.
+hall_sensor: hall_sensor/CMakeFiles/hall_sensor.dir/rule
+
+.PHONY : hall_sensor
+
+# clean rule for target.
+hall_sensor/CMakeFiles/hall_sensor.dir/clean:
+	$(MAKE) -f hall_sensor/CMakeFiles/hall_sensor.dir/build.make hall_sensor/CMakeFiles/hall_sensor.dir/clean
+.PHONY : hall_sensor/CMakeFiles/hall_sensor.dir/clean
+
+# clean rule for target.
+clean: hall_sensor/CMakeFiles/hall_sensor.dir/clean
 
 .PHONY : clean
 
@@ -1767,7 +1806,7 @@ clean: rplidar_ros/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
 rplidar_ros/CMakeFiles/rplidarNodeClient.dir/all:
 	$(MAKE) -f rplidar_ros/CMakeFiles/rplidarNodeClient.dir/build.make rplidar_ros/CMakeFiles/rplidarNodeClient.dir/depend
 	$(MAKE) -f rplidar_ros/CMakeFiles/rplidarNodeClient.dir/build.make rplidar_ros/CMakeFiles/rplidarNodeClient.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/MyLocalGit/snowbird/build/CMakeFiles --progress-num=29,30 "Built target rplidarNodeClient"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/MyLocalGit/snowbird/build/CMakeFiles --progress-num=31,32 "Built target rplidarNodeClient"
 .PHONY : rplidar_ros/CMakeFiles/rplidarNodeClient.dir/all
 
 # Include target in all.
@@ -1868,7 +1907,7 @@ clean: rplidar_ros/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
 rplidar_ros/CMakeFiles/rplidarNode.dir/all:
 	$(MAKE) -f rplidar_ros/CMakeFiles/rplidarNode.dir/build.make rplidar_ros/CMakeFiles/rplidarNode.dir/depend
 	$(MAKE) -f rplidar_ros/CMakeFiles/rplidarNode.dir/build.make rplidar_ros/CMakeFiles/rplidarNode.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/MyLocalGit/snowbird/build/CMakeFiles --progress-num=22,23,24,25,26,27,28 "Built target rplidarNode"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/MyLocalGit/snowbird/build/CMakeFiles --progress-num=24,25,26,27,28,29,30 "Built target rplidarNode"
 .PHONY : rplidar_ros/CMakeFiles/rplidarNode.dir/all
 
 # Include target in all.
@@ -1938,7 +1977,7 @@ ultra_sonic/CMakeFiles/ultra_sonic_node.dir/all: actuator/CMakeFiles/rosgraph_ms
 ultra_sonic/CMakeFiles/ultra_sonic_node.dir/all: actuator/CMakeFiles/std_msgs_generate_messages_eus.dir/all
 	$(MAKE) -f ultra_sonic/CMakeFiles/ultra_sonic_node.dir/build.make ultra_sonic/CMakeFiles/ultra_sonic_node.dir/depend
 	$(MAKE) -f ultra_sonic/CMakeFiles/ultra_sonic_node.dir/build.make ultra_sonic/CMakeFiles/ultra_sonic_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/MyLocalGit/snowbird/build/CMakeFiles --progress-num=31,32,33 "Built target ultra_sonic_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/MyLocalGit/snowbird/build/CMakeFiles --progress-num=33,34,35 "Built target ultra_sonic_node"
 .PHONY : ultra_sonic/CMakeFiles/ultra_sonic_node.dir/all
 
 # Include target in all.

@@ -4,18 +4,26 @@
 *Main function of the hall sensor node                                 *
 ***********************************************************************/
 #include <ros/ros.h>
-#include <hallSensor.h>
+#include "wheels.h"
 
 #define HALL_LOOP_RATE 500
-float speed = 0;
-int stop = 0.00001;
-int start = 0;
 
+typedef enum WhlsID
+{
+   FL = 0,
+   FR,
+   RL,
+   RR,
+   WHLMAX
+};
 int main (int argc, char** argv)
 {
    int count = 0;
    int duration;
-
+   int iWhl = 0;
+   int tickDiv = 2;
+   float speed[WHLMAX] = {0};
+   float avgSpd = 0;
    /*Init ROS Node: actuator_node*/
    ros::init(argc, argv, "hallSensor");
    ros::NodeHandle n;
@@ -24,34 +32,27 @@ int main (int argc, char** argv)
    /*Init wiringPi for GPIO*/
    wiringPiSetup();
 
-   /*Implementation of ultra sonic and wheel pulse*/
-   int whlPulFL = 0;
-   int whlPulFR = 0;
-   int whlPulRR = 0;
-   int whlPulRL = 0;
    /*Init wheel pulse*/
-   initHall();
+   Wheels whl[WHLMAX] = {Wheels(WHLPUL_FL), Wheels(WHLPUL_FR),
+   			 Wheels(WHLPUL_RL), Wheels(WHLPUL_RR)};
 
    while (ros::ok())
    {
-      /*Implementation of wheel pulse*/
-      whlPulRR = whlPulCnt(WHLPUL_RR);
-      #if 0
-      whlPulFL = whlPulCnt(WHLPUL_FL);
-      whlPulFR = whlPulCnt(WHLPUL_FR);
-      whlPulRL = whlPulCnt(WHLPUL_RL);
-      #endif
-
       count++;
-
-      if(count >= HALL_LOOP_RATE/2)
+      /*Update the pulse counter for 4 wheels*/
+      for (iWhl = 0; iWhl < WHLMAX; iWhl++)
+      {
+         whl[iWhl].whlPulCnt();
+      }
+      /*tick the calculation of the wheel speed in every 0.5ms*/
+      if(count >= HALL_LOOP_RATE/tickDiv)
       {
          count = 0;
-         ROS_INFO("wheel pulse:[ FL = %d, FR = %d, RR = %d, RL = %d", 
-               whlPulFL, whlPulFR, whlPulRR, whlPulRL);
-         speed = 2 * whlPulRR * WHLSPEED_FACTOR * 3.14 * 0.001;
-         whlPulCntReset(whlPulRR);
-         ROS_INFO("wheel speed: %.2f", speed);
+         for (iWhl = 0; iWhl < WHLMAX; iWhl++)
+	 {
+            ROS_INFO("wheel speed [%d]: %.2f",iWhl, whl[iWhl].getSpeed(tickDiv));
+	    whl[iWhl].whlPulCntReset();
+	 }
       }
       /*gurantee the refresh period*/
       loop_rate.sleep();

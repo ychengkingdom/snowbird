@@ -129,9 +129,9 @@ link_directories(
  /usr/lib
 )
 ## Declare a C++ library
-# add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/hall_sensor.cpp
-# )
+ add_library(${PROJECT_NAME}
+   src/wheels.cpp
+)
 
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
@@ -141,7 +141,7 @@ link_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-add_executable(${PROJECT_NAME}_node src/hall_sensor_node.cpp src/hallSensor.cpp)
+add_executable(${PROJECT_NAME}_node src/hall_sensor_node.cpp src/wheels.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the

@@ -280,6 +280,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "actuator/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/DependInfo.cmake"
   "actuator/CMakeFiles/std_msgs_generate_messages_eus.dir/DependInfo.cmake"
   "hall_sensor/CMakeFiles/hall_sensor_node.dir/DependInfo.cmake"
+  "hall_sensor/CMakeFiles/hall_sensor.dir/DependInfo.cmake"
   "rplidar_ros/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/DependInfo.cmake"
   "rplidar_ros/CMakeFiles/sensor_msgs_generate_messages_py.dir/DependInfo.cmake"
   "rplidar_ros/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/DependInfo.cmake"

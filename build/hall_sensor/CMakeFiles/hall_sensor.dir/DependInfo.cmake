@@ -4,8 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/pi/MyLocalGit/snowbird/src/hall_sensor/src/hall_sensor_node.cpp" "/home/pi/MyLocalGit/snowbird/build/hall_sensor/CMakeFiles/hall_sensor_node.dir/src/hall_sensor_node.cpp.o"
-  "/home/pi/MyLocalGit/snowbird/src/hall_sensor/src/wheels.cpp" "/home/pi/MyLocalGit/snowbird/build/hall_sensor/CMakeFiles/hall_sensor_node.dir/src/wheels.cpp.o"
+  "/home/pi/MyLocalGit/snowbird/src/hall_sensor/src/wheels.cpp" "/home/pi/MyLocalGit/snowbird/build/hall_sensor/CMakeFiles/hall_sensor.dir/src/wheels.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

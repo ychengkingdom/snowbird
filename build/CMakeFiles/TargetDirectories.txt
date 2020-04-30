@@ -72,13 +72,14 @@
 /home/pi/MyLocalGit/snowbird/build/actuator/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir
 /home/pi/MyLocalGit/snowbird/build/actuator/CMakeFiles/std_msgs_generate_messages_eus.dir
 /home/pi/MyLocalGit/snowbird/build/hall_sensor/CMakeFiles/install/strip.dir
+/home/pi/MyLocalGit/snowbird/build/hall_sensor/CMakeFiles/install.dir
 /home/pi/MyLocalGit/snowbird/build/hall_sensor/CMakeFiles/install/local.dir
-/home/pi/MyLocalGit/snowbird/build/hall_sensor/CMakeFiles/test.dir
 /home/pi/MyLocalGit/snowbird/build/hall_sensor/CMakeFiles/hall_sensor_node.dir
+/home/pi/MyLocalGit/snowbird/build/hall_sensor/CMakeFiles/test.dir
+/home/pi/MyLocalGit/snowbird/build/hall_sensor/CMakeFiles/hall_sensor.dir
 /home/pi/MyLocalGit/snowbird/build/hall_sensor/CMakeFiles/edit_cache.dir
 /home/pi/MyLocalGit/snowbird/build/hall_sensor/CMakeFiles/rebuild_cache.dir
 /home/pi/MyLocalGit/snowbird/build/hall_sensor/CMakeFiles/list_install_components.dir
-/home/pi/MyLocalGit/snowbird/build/hall_sensor/CMakeFiles/install.dir
 /home/pi/MyLocalGit/snowbird/build/rplidar_ros/CMakeFiles/install/strip.dir
 /home/pi/MyLocalGit/snowbird/build/rplidar_ros/CMakeFiles/install.dir
 /home/pi/MyLocalGit/snowbird/build/rplidar_ros/CMakeFiles/sensor_msgs_generate_messages_cpp.dir

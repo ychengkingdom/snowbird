@@ -16,11 +16,11 @@ bcm2835.h
 hall_sensor_cfg.h
 /home/pi/MyLocalGit/snowbird/src/hall_sensor/include/hall_sensor/hall_sensor_cfg.h
 
-/home/pi/MyLocalGit/snowbird/src/hall_sensor/src/hall_sensor_node.cpp
-ros/ros.h
--
+/home/pi/MyLocalGit/snowbird/src/hall_sensor/src/wheels.cpp
 wheels.h
 /home/pi/MyLocalGit/snowbird/src/hall_sensor/src/wheels.h
+ros/ros.h
+-
 
 /opt/ros/melodic/include/ros/advertise_options.h
 ros/forwards.h

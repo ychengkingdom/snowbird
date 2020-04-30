@@ -68,6 +68,18 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -123,18 +135,6 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
 # The main all target
 all: cmake_check_build_system
 	cd /home/pi/MyLocalGit/snowbird/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/pi/MyLocalGit/snowbird/build/CMakeFiles /home/pi/MyLocalGit/snowbird/build/hall_sensor/CMakeFiles/progress.marks
@@ -182,32 +182,20 @@ hall_sensor_node/fast:
 	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_node.dir/build.make hall_sensor/CMakeFiles/hall_sensor_node.dir/build
 .PHONY : hall_sensor_node/fast
 
-src/hallSensor.o: src/hallSensor.cpp.o
+# Convenience name for target.
+hall_sensor/CMakeFiles/hall_sensor.dir/rule:
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f CMakeFiles/Makefile2 hall_sensor/CMakeFiles/hall_sensor.dir/rule
+.PHONY : hall_sensor/CMakeFiles/hall_sensor.dir/rule
 
-.PHONY : src/hallSensor.o
+# Convenience name for target.
+hall_sensor: hall_sensor/CMakeFiles/hall_sensor.dir/rule
 
-# target to build an object file
-src/hallSensor.cpp.o:
-	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_node.dir/build.make hall_sensor/CMakeFiles/hall_sensor_node.dir/src/hallSensor.cpp.o
-.PHONY : src/hallSensor.cpp.o
+.PHONY : hall_sensor
 
-src/hallSensor.i: src/hallSensor.cpp.i
-
-.PHONY : src/hallSensor.i
-
-# target to preprocess a source file
-src/hallSensor.cpp.i:
-	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_node.dir/build.make hall_sensor/CMakeFiles/hall_sensor_node.dir/src/hallSensor.cpp.i
-.PHONY : src/hallSensor.cpp.i
-
-src/hallSensor.s: src/hallSensor.cpp.s
-
-.PHONY : src/hallSensor.s
-
-# target to generate assembly for a file
-src/hallSensor.cpp.s:
-	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_node.dir/build.make hall_sensor/CMakeFiles/hall_sensor_node.dir/src/hallSensor.cpp.s
-.PHONY : src/hallSensor.cpp.s
+# fast build rule for target.
+hall_sensor/fast:
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f hall_sensor/CMakeFiles/hall_sensor.dir/build.make hall_sensor/CMakeFiles/hall_sensor.dir/build
+.PHONY : hall_sensor/fast
 
 src/hall_sensor_node.o: src/hall_sensor_node.cpp.o
 
@@ -236,6 +224,36 @@ src/hall_sensor_node.cpp.s:
 	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_node.dir/build.make hall_sensor/CMakeFiles/hall_sensor_node.dir/src/hall_sensor_node.cpp.s
 .PHONY : src/hall_sensor_node.cpp.s
 
+src/wheels.o: src/wheels.cpp.o
+
+.PHONY : src/wheels.o
+
+# target to build an object file
+src/wheels.cpp.o:
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_node.dir/build.make hall_sensor/CMakeFiles/hall_sensor_node.dir/src/wheels.cpp.o
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f hall_sensor/CMakeFiles/hall_sensor.dir/build.make hall_sensor/CMakeFiles/hall_sensor.dir/src/wheels.cpp.o
+.PHONY : src/wheels.cpp.o
+
+src/wheels.i: src/wheels.cpp.i
+
+.PHONY : src/wheels.i
+
+# target to preprocess a source file
+src/wheels.cpp.i:
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_node.dir/build.make hall_sensor/CMakeFiles/hall_sensor_node.dir/src/wheels.cpp.i
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f hall_sensor/CMakeFiles/hall_sensor.dir/build.make hall_sensor/CMakeFiles/hall_sensor.dir/src/wheels.cpp.i
+.PHONY : src/wheels.cpp.i
+
+src/wheels.s: src/wheels.cpp.s
+
+.PHONY : src/wheels.s
+
+# target to generate assembly for a file
+src/wheels.cpp.s:
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_node.dir/build.make hall_sensor/CMakeFiles/hall_sensor_node.dir/src/wheels.cpp.s
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f hall_sensor/CMakeFiles/hall_sensor.dir/build.make hall_sensor/CMakeFiles/hall_sensor.dir/src/wheels.cpp.s
+.PHONY : src/wheels.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -243,19 +261,20 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
+	@echo "... install"
 	@echo "... install/local"
-	@echo "... test"
 	@echo "... hall_sensor_node"
+	@echo "... test"
+	@echo "... hall_sensor"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... list_install_components"
-	@echo "... install"
-	@echo "... src/hallSensor.o"
-	@echo "... src/hallSensor.i"
-	@echo "... src/hallSensor.s"
 	@echo "... src/hall_sensor_node.o"
 	@echo "... src/hall_sensor_node.i"
 	@echo "... src/hall_sensor_node.s"
+	@echo "... src/wheels.o"
+	@echo "... src/wheels.i"
+	@echo "... src/wheels.s"
 .PHONY : help
 
 
