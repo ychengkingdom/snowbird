@@ -119,8 +119,8 @@ catkin_package(
 include_directories(
  include
   ${catkin_INCLUDE_DIRS}
-/usr/include
-/home/pi/MyLocalGit/snowbird/src/hall_sensor/include/hall_sensor
+  /usr/include
+  ${CMAKE_CURRENT_LIST_DIR}/include/hall_sensor
 )
 
 link_directories(

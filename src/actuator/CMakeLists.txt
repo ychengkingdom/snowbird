@@ -120,9 +120,8 @@ catkin_package(
 include_directories(
  include
   ${catkin_INCLUDE_DIRS}
-/usr/include
-#  /usr/local/include
-/home/pi/snowbird/src/actuator/include/actuator
+  /usr/include
+  ${CMAKE_CURRENT_LIST_DIR}/include/actuator
 )
 
 link_directories(
