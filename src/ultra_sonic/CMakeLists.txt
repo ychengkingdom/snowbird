@@ -120,7 +120,7 @@ include_directories(
  include
   ${catkin_INCLUDE_DIRS}
 /usr/include
-/home/pi/MyLocalGit/snowbird/src/ultra_sonic/include/ultra_sonic
+include/ultra_sonic
 )
 
 link_directories(

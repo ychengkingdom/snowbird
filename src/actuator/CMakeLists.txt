@@ -122,7 +122,7 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 /usr/include
 #  /usr/local/include
-/home/pi/snowbird/src/actuator/include/actuator
+include/actuator
 )
 
 link_directories(

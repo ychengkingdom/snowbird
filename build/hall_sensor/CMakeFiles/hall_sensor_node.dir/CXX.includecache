@@ -22,6 +22,12 @@ ros/ros.h
 wheels.h
 /home/pi/MyLocalGit/snowbird/src/hall_sensor/src/wheels.h
 
+/home/pi/MyLocalGit/snowbird/src/hall_sensor/src/wheels.cpp
+wheels.h
+/home/pi/MyLocalGit/snowbird/src/hall_sensor/src/wheels.h
+ros/ros.h
+-
+
 /opt/ros/melodic/include/ros/advertise_options.h
 ros/forwards.h
 /opt/ros/melodic/include/ros/ros/forwards.h

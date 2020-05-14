@@ -120,7 +120,8 @@ include_directories(
  include
   ${catkin_INCLUDE_DIRS}
 /usr/include
-/home/pi/MyLocalGit/snowbird/src/hall_sensor/include/hall_sensor
+include/hall_sensor
+#/home/pi/MyLocalGit/snowbird/src/hall_sensor/include/hall_sensor
 )
 
 link_directories(

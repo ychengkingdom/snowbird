@@ -22,7 +22,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/pi/MyLocalGit/snowbird/src/actuator/include"
   "/opt/ros/melodic/include"
   "/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
-  "/home/pi/snowbird/src/actuator/include/actuator"
+  "/home/pi/MyLocalGit/snowbird/src/actuator/include/actuator"
   )
 
 # Targets to which this target links.
