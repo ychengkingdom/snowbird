@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+/home/pi/MyLocalGit/snowbird/devel/include/hall_sensor/Wheels_vel.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
 /home/pi/MyLocalGit/snowbird/src/hall_sensor/include/hall_sensor/hall_sensor_cfg.h
 wiringPi.h
 /home/pi/MyLocalGit/snowbird/src/hall_sensor/include/hall_sensor/wiringPi.h
@@ -21,12 +37,8 @@ ros/ros.h
 -
 wheels.h
 /home/pi/MyLocalGit/snowbird/src/hall_sensor/src/wheels.h
-
-/home/pi/MyLocalGit/snowbird/src/hall_sensor/src/wheels.cpp
-wheels.h
-/home/pi/MyLocalGit/snowbird/src/hall_sensor/src/wheels.h
-ros/ros.h
--
+hall_sensor/Wheels_vel.h
+/home/pi/MyLocalGit/snowbird/src/hall_sensor/src/hall_sensor/Wheels_vel.h
 
 /opt/ros/melodic/include/ros/advertise_options.h
 ros/forwards.h
@@ -236,6 +248,10 @@ boost/make_shared.hpp
 cstddef
 -
 memory
+-
+
+/opt/ros/melodic/include/ros/message_operations.h
+ostream
 -
 
 /opt/ros/melodic/include/ros/message_traits.h

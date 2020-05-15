@@ -3,6 +3,6 @@ prefix=/home/pi/MyLocalGit/snowbird/devel
 Name: ultra_sonic
 Description: Description of ultra_sonic
 Version: 0.0.0
-Cflags: 
+Cflags: -I/home/pi/MyLocalGit/snowbird/devel/include
 Libs: -L${prefix}/lib 
-Requires: 
+Requires: message_generation roscpp rospy std_msgs

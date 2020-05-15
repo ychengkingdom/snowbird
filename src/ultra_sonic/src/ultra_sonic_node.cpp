@@ -5,6 +5,10 @@
 ***********************************************************************/
 #include <ros/ros.h>
 #include "ultraSonic.h"
+#include "ultra_sonic/Ultra_dis.h"
+
+#define ULTRA_LOOP_RATE 5
+
 int main(int argc, char** argv)
 {
    float dis_fr = 0;
@@ -13,7 +17,9 @@ int main(int argc, char** argv)
    /*Init ROS Node: actuator_node*/
    ros::init(argc, argv, "ultraSonic");
    ros::NodeHandle n;
-   ros::Rate loop_rate(5);
+   ros::Publisher ultraDis_pub = n.advertise<ultra_sonic::Ultra_dis>("/ultra_dis",
+		                   10);
+   ros::Rate loop_rate(ULTRA_LOOP_RATE);
 
    /*Init wiringPi for GPIO*/
    wiringPiSetup();
@@ -23,10 +29,15 @@ int main(int argc, char** argv)
 
    while (ros::ok())
    {
+      ultra_sonic::Ultra_dis ultraDis_msg;
       /*Implementation of ultra sonic*/
       dis_fr = frUltra.disUS_015();
       //dis_re = reUltra.disUS_015();
       ROS_INFO("front dis: %0.2f; rear dis: %0.2f", dis_fr, dis_re);
+
+      ultraDis_msg.fr = dis_fr;
+      ultraDis_msg.re = dis_re;
+      ultraDis_pub.publish(ultraDis_msg);
       /*gurantee the refresh period*/
       loop_rate.sleep();
    }

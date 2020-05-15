@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+/home/pi/MyLocalGit/snowbird/devel/include/ultra_sonic/Ultra_dis.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
 /home/pi/MyLocalGit/snowbird/src/ultra_sonic/include/ultra_sonic/ultraSonic.h
 sys/time.h
 -
@@ -18,11 +34,13 @@ wiringPi.h
 bcm2835.h
 /home/pi/MyLocalGit/snowbird/src/ultra_sonic/include/ultra_sonic/bcm2835.h
 
-/home/pi/MyLocalGit/snowbird/src/ultra_sonic/src/ultraSonic.cpp
+/home/pi/MyLocalGit/snowbird/src/ultra_sonic/src/ultra_sonic_node.cpp
 ros/ros.h
 -
 ultraSonic.h
 /home/pi/MyLocalGit/snowbird/src/ultra_sonic/src/ultraSonic.h
+ultra_sonic/Ultra_dis.h
+/home/pi/MyLocalGit/snowbird/src/ultra_sonic/src/ultra_sonic/Ultra_dis.h
 
 /opt/ros/melodic/include/ros/advertise_options.h
 ros/forwards.h
@@ -232,6 +250,10 @@ boost/make_shared.hpp
 cstddef
 -
 memory
+-
+
+/opt/ros/melodic/include/ros/message_operations.h
+ostream
 -
 
 /opt/ros/melodic/include/ros/message_traits.h

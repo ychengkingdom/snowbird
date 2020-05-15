@@ -22,7 +22,8 @@ class Wheels
       /*Function declarations for wheel pulse counter*/
       int whlPulCnt();
       void whlPulCntReset();
-      float getSpeed(int tick);
+      void updateSpeed(int tick);
+      float getSpeed();
  };
 
 #endif

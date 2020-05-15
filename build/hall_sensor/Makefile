@@ -68,18 +68,6 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -92,27 +80,17 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
 
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -125,6 +103,17 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -134,6 +123,17 @@ list_install_components:
 list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -168,19 +168,184 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-hall_sensor/CMakeFiles/hall_sensor_node.dir/rule:
-	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f CMakeFiles/Makefile2 hall_sensor/CMakeFiles/hall_sensor_node.dir/rule
-.PHONY : hall_sensor/CMakeFiles/hall_sensor_node.dir/rule
+hall_sensor/CMakeFiles/hall_sensor_generate_messages_eus.dir/rule:
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f CMakeFiles/Makefile2 hall_sensor/CMakeFiles/hall_sensor_generate_messages_eus.dir/rule
+.PHONY : hall_sensor/CMakeFiles/hall_sensor_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-hall_sensor_node: hall_sensor/CMakeFiles/hall_sensor_node.dir/rule
+hall_sensor_generate_messages_eus: hall_sensor/CMakeFiles/hall_sensor_generate_messages_eus.dir/rule
 
-.PHONY : hall_sensor_node
+.PHONY : hall_sensor_generate_messages_eus
 
 # fast build rule for target.
-hall_sensor_node/fast:
-	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_node.dir/build.make hall_sensor/CMakeFiles/hall_sensor_node.dir/build
-.PHONY : hall_sensor_node/fast
+hall_sensor_generate_messages_eus/fast:
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_generate_messages_eus.dir/build.make hall_sensor/CMakeFiles/hall_sensor_generate_messages_eus.dir/build
+.PHONY : hall_sensor_generate_messages_eus/fast
+
+# Convenience name for target.
+hall_sensor/CMakeFiles/hall_sensor_generate_messages.dir/rule:
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f CMakeFiles/Makefile2 hall_sensor/CMakeFiles/hall_sensor_generate_messages.dir/rule
+.PHONY : hall_sensor/CMakeFiles/hall_sensor_generate_messages.dir/rule
+
+# Convenience name for target.
+hall_sensor_generate_messages: hall_sensor/CMakeFiles/hall_sensor_generate_messages.dir/rule
+
+.PHONY : hall_sensor_generate_messages
+
+# fast build rule for target.
+hall_sensor_generate_messages/fast:
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_generate_messages.dir/build.make hall_sensor/CMakeFiles/hall_sensor_generate_messages.dir/build
+.PHONY : hall_sensor_generate_messages/fast
+
+# Convenience name for target.
+hall_sensor/CMakeFiles/hall_sensor_generate_messages_cpp.dir/rule:
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f CMakeFiles/Makefile2 hall_sensor/CMakeFiles/hall_sensor_generate_messages_cpp.dir/rule
+.PHONY : hall_sensor/CMakeFiles/hall_sensor_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+hall_sensor_generate_messages_cpp: hall_sensor/CMakeFiles/hall_sensor_generate_messages_cpp.dir/rule
+
+.PHONY : hall_sensor_generate_messages_cpp
+
+# fast build rule for target.
+hall_sensor_generate_messages_cpp/fast:
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_generate_messages_cpp.dir/build.make hall_sensor/CMakeFiles/hall_sensor_generate_messages_cpp.dir/build
+.PHONY : hall_sensor_generate_messages_cpp/fast
+
+# Convenience name for target.
+hall_sensor/CMakeFiles/hall_sensor_geneus.dir/rule:
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f CMakeFiles/Makefile2 hall_sensor/CMakeFiles/hall_sensor_geneus.dir/rule
+.PHONY : hall_sensor/CMakeFiles/hall_sensor_geneus.dir/rule
+
+# Convenience name for target.
+hall_sensor_geneus: hall_sensor/CMakeFiles/hall_sensor_geneus.dir/rule
+
+.PHONY : hall_sensor_geneus
+
+# fast build rule for target.
+hall_sensor_geneus/fast:
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_geneus.dir/build.make hall_sensor/CMakeFiles/hall_sensor_geneus.dir/build
+.PHONY : hall_sensor_geneus/fast
+
+# Convenience name for target.
+hall_sensor/CMakeFiles/hall_sensor_generate_messages_lisp.dir/rule:
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f CMakeFiles/Makefile2 hall_sensor/CMakeFiles/hall_sensor_generate_messages_lisp.dir/rule
+.PHONY : hall_sensor/CMakeFiles/hall_sensor_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+hall_sensor_generate_messages_lisp: hall_sensor/CMakeFiles/hall_sensor_generate_messages_lisp.dir/rule
+
+.PHONY : hall_sensor_generate_messages_lisp
+
+# fast build rule for target.
+hall_sensor_generate_messages_lisp/fast:
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_generate_messages_lisp.dir/build.make hall_sensor/CMakeFiles/hall_sensor_generate_messages_lisp.dir/build
+.PHONY : hall_sensor_generate_messages_lisp/fast
+
+# Convenience name for target.
+hall_sensor/CMakeFiles/_hall_sensor_generate_messages_check_deps_Wheels_vel.dir/rule:
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f CMakeFiles/Makefile2 hall_sensor/CMakeFiles/_hall_sensor_generate_messages_check_deps_Wheels_vel.dir/rule
+.PHONY : hall_sensor/CMakeFiles/_hall_sensor_generate_messages_check_deps_Wheels_vel.dir/rule
+
+# Convenience name for target.
+_hall_sensor_generate_messages_check_deps_Wheels_vel: hall_sensor/CMakeFiles/_hall_sensor_generate_messages_check_deps_Wheels_vel.dir/rule
+
+.PHONY : _hall_sensor_generate_messages_check_deps_Wheels_vel
+
+# fast build rule for target.
+_hall_sensor_generate_messages_check_deps_Wheels_vel/fast:
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f hall_sensor/CMakeFiles/_hall_sensor_generate_messages_check_deps_Wheels_vel.dir/build.make hall_sensor/CMakeFiles/_hall_sensor_generate_messages_check_deps_Wheels_vel.dir/build
+.PHONY : _hall_sensor_generate_messages_check_deps_Wheels_vel/fast
+
+# Convenience name for target.
+hall_sensor/CMakeFiles/hall_sensor_genlisp.dir/rule:
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f CMakeFiles/Makefile2 hall_sensor/CMakeFiles/hall_sensor_genlisp.dir/rule
+.PHONY : hall_sensor/CMakeFiles/hall_sensor_genlisp.dir/rule
+
+# Convenience name for target.
+hall_sensor_genlisp: hall_sensor/CMakeFiles/hall_sensor_genlisp.dir/rule
+
+.PHONY : hall_sensor_genlisp
+
+# fast build rule for target.
+hall_sensor_genlisp/fast:
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_genlisp.dir/build.make hall_sensor/CMakeFiles/hall_sensor_genlisp.dir/build
+.PHONY : hall_sensor_genlisp/fast
+
+# Convenience name for target.
+hall_sensor/CMakeFiles/hall_sensor_gencpp.dir/rule:
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f CMakeFiles/Makefile2 hall_sensor/CMakeFiles/hall_sensor_gencpp.dir/rule
+.PHONY : hall_sensor/CMakeFiles/hall_sensor_gencpp.dir/rule
+
+# Convenience name for target.
+hall_sensor_gencpp: hall_sensor/CMakeFiles/hall_sensor_gencpp.dir/rule
+
+.PHONY : hall_sensor_gencpp
+
+# fast build rule for target.
+hall_sensor_gencpp/fast:
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_gencpp.dir/build.make hall_sensor/CMakeFiles/hall_sensor_gencpp.dir/build
+.PHONY : hall_sensor_gencpp/fast
+
+# Convenience name for target.
+hall_sensor/CMakeFiles/hall_sensor_gennodejs.dir/rule:
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f CMakeFiles/Makefile2 hall_sensor/CMakeFiles/hall_sensor_gennodejs.dir/rule
+.PHONY : hall_sensor/CMakeFiles/hall_sensor_gennodejs.dir/rule
+
+# Convenience name for target.
+hall_sensor_gennodejs: hall_sensor/CMakeFiles/hall_sensor_gennodejs.dir/rule
+
+.PHONY : hall_sensor_gennodejs
+
+# fast build rule for target.
+hall_sensor_gennodejs/fast:
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_gennodejs.dir/build.make hall_sensor/CMakeFiles/hall_sensor_gennodejs.dir/build
+.PHONY : hall_sensor_gennodejs/fast
+
+# Convenience name for target.
+hall_sensor/CMakeFiles/hall_sensor_generate_messages_py.dir/rule:
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f CMakeFiles/Makefile2 hall_sensor/CMakeFiles/hall_sensor_generate_messages_py.dir/rule
+.PHONY : hall_sensor/CMakeFiles/hall_sensor_generate_messages_py.dir/rule
+
+# Convenience name for target.
+hall_sensor_generate_messages_py: hall_sensor/CMakeFiles/hall_sensor_generate_messages_py.dir/rule
+
+.PHONY : hall_sensor_generate_messages_py
+
+# fast build rule for target.
+hall_sensor_generate_messages_py/fast:
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_generate_messages_py.dir/build.make hall_sensor/CMakeFiles/hall_sensor_generate_messages_py.dir/build
+.PHONY : hall_sensor_generate_messages_py/fast
+
+# Convenience name for target.
+hall_sensor/CMakeFiles/hall_sensor_generate_messages_nodejs.dir/rule:
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f CMakeFiles/Makefile2 hall_sensor/CMakeFiles/hall_sensor_generate_messages_nodejs.dir/rule
+.PHONY : hall_sensor/CMakeFiles/hall_sensor_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+hall_sensor_generate_messages_nodejs: hall_sensor/CMakeFiles/hall_sensor_generate_messages_nodejs.dir/rule
+
+.PHONY : hall_sensor_generate_messages_nodejs
+
+# fast build rule for target.
+hall_sensor_generate_messages_nodejs/fast:
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_generate_messages_nodejs.dir/build.make hall_sensor/CMakeFiles/hall_sensor_generate_messages_nodejs.dir/build
+.PHONY : hall_sensor_generate_messages_nodejs/fast
+
+# Convenience name for target.
+hall_sensor/CMakeFiles/hall_sensor_genpy.dir/rule:
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f CMakeFiles/Makefile2 hall_sensor/CMakeFiles/hall_sensor_genpy.dir/rule
+.PHONY : hall_sensor/CMakeFiles/hall_sensor_genpy.dir/rule
+
+# Convenience name for target.
+hall_sensor_genpy: hall_sensor/CMakeFiles/hall_sensor_genpy.dir/rule
+
+.PHONY : hall_sensor_genpy
+
+# fast build rule for target.
+hall_sensor_genpy/fast:
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_genpy.dir/build.make hall_sensor/CMakeFiles/hall_sensor_genpy.dir/build
+.PHONY : hall_sensor_genpy/fast
 
 # Convenience name for target.
 hall_sensor/CMakeFiles/hall_sensor.dir/rule:
@@ -196,6 +361,21 @@ hall_sensor: hall_sensor/CMakeFiles/hall_sensor.dir/rule
 hall_sensor/fast:
 	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f hall_sensor/CMakeFiles/hall_sensor.dir/build.make hall_sensor/CMakeFiles/hall_sensor.dir/build
 .PHONY : hall_sensor/fast
+
+# Convenience name for target.
+hall_sensor/CMakeFiles/hall_sensor_node.dir/rule:
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f CMakeFiles/Makefile2 hall_sensor/CMakeFiles/hall_sensor_node.dir/rule
+.PHONY : hall_sensor/CMakeFiles/hall_sensor_node.dir/rule
+
+# Convenience name for target.
+hall_sensor_node: hall_sensor/CMakeFiles/hall_sensor_node.dir/rule
+
+.PHONY : hall_sensor_node
+
+# fast build rule for target.
+hall_sensor_node/fast:
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_node.dir/build.make hall_sensor/CMakeFiles/hall_sensor_node.dir/build
+.PHONY : hall_sensor_node/fast
 
 src/hall_sensor_node.o: src/hall_sensor_node.cpp.o
 
@@ -230,8 +410,8 @@ src/wheels.o: src/wheels.cpp.o
 
 # target to build an object file
 src/wheels.cpp.o:
-	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_node.dir/build.make hall_sensor/CMakeFiles/hall_sensor_node.dir/src/wheels.cpp.o
 	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f hall_sensor/CMakeFiles/hall_sensor.dir/build.make hall_sensor/CMakeFiles/hall_sensor.dir/src/wheels.cpp.o
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_node.dir/build.make hall_sensor/CMakeFiles/hall_sensor_node.dir/src/wheels.cpp.o
 .PHONY : src/wheels.cpp.o
 
 src/wheels.i: src/wheels.cpp.i
@@ -240,8 +420,8 @@ src/wheels.i: src/wheels.cpp.i
 
 # target to preprocess a source file
 src/wheels.cpp.i:
-	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_node.dir/build.make hall_sensor/CMakeFiles/hall_sensor_node.dir/src/wheels.cpp.i
 	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f hall_sensor/CMakeFiles/hall_sensor.dir/build.make hall_sensor/CMakeFiles/hall_sensor.dir/src/wheels.cpp.i
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_node.dir/build.make hall_sensor/CMakeFiles/hall_sensor_node.dir/src/wheels.cpp.i
 .PHONY : src/wheels.cpp.i
 
 src/wheels.s: src/wheels.cpp.s
@@ -250,8 +430,8 @@ src/wheels.s: src/wheels.cpp.s
 
 # target to generate assembly for a file
 src/wheels.cpp.s:
-	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_node.dir/build.make hall_sensor/CMakeFiles/hall_sensor_node.dir/src/wheels.cpp.s
 	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f hall_sensor/CMakeFiles/hall_sensor.dir/build.make hall_sensor/CMakeFiles/hall_sensor.dir/src/wheels.cpp.s
+	cd /home/pi/MyLocalGit/snowbird/build && $(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_node.dir/build.make hall_sensor/CMakeFiles/hall_sensor_node.dir/src/wheels.cpp.s
 .PHONY : src/wheels.cpp.s
 
 # Help Target
@@ -261,14 +441,26 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
-	@echo "... install"
 	@echo "... install/local"
+	@echo "... install"
+	@echo "... hall_sensor_generate_messages_eus"
+	@echo "... hall_sensor_generate_messages"
+	@echo "... hall_sensor_generate_messages_cpp"
+	@echo "... hall_sensor_geneus"
+	@echo "... hall_sensor_generate_messages_lisp"
+	@echo "... _hall_sensor_generate_messages_check_deps_Wheels_vel"
+	@echo "... rebuild_cache"
+	@echo "... hall_sensor_genlisp"
+	@echo "... edit_cache"
+	@echo "... hall_sensor_gencpp"
+	@echo "... hall_sensor_gennodejs"
+	@echo "... list_install_components"
+	@echo "... hall_sensor_generate_messages_py"
+	@echo "... hall_sensor_generate_messages_nodejs"
+	@echo "... hall_sensor_genpy"
+	@echo "... hall_sensor"
 	@echo "... hall_sensor_node"
 	@echo "... test"
-	@echo "... hall_sensor"
-	@echo "... edit_cache"
-	@echo "... rebuild_cache"
-	@echo "... list_install_components"
 	@echo "... src/hall_sensor_node.o"
 	@echo "... src/hall_sensor_node.i"
 	@echo "... src/hall_sensor_node.s"

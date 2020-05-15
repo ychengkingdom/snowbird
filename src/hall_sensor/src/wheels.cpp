@@ -47,12 +47,14 @@ void Wheels::whlPulCntReset()
   m_whlPul = 0;
 }
 
-float Wheels::getSpeed(int tick)
+void Wheels::updateSpeed(int tick)
 {
    m_speed = tick * m_whlPul * WHLSPEED_FACTOR *3.14 * 0.001;
+}
+float Wheels::getSpeed()
+{
    return m_speed;
 }
-
 /***********************************************************************
  * Yc, Mar 13, 2020, Add file description and modulize orgnization
  * Yc, Apr 23, 2020, Add the wheel speed calculation

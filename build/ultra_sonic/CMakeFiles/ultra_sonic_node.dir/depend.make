@@ -62,9 +62,10 @@ ultra_sonic/CMakeFiles/ultra_sonic_node.dir/src/ultraSonic.cpp.o: /opt/ros/melod
 ultra_sonic/CMakeFiles/ultra_sonic_node.dir/src/ultraSonic.cpp.o: /opt/ros/melodic/include/xmlrpcpp/XmlRpcDecl.h
 ultra_sonic/CMakeFiles/ultra_sonic_node.dir/src/ultraSonic.cpp.o: /opt/ros/melodic/include/xmlrpcpp/XmlRpcValue.h
 
+ultra_sonic/CMakeFiles/ultra_sonic_node.dir/src/ultra_sonic_node.cpp.o: /home/pi/MyLocalGit/snowbird/devel/include/ultra_sonic/Ultra_dis.h
+ultra_sonic/CMakeFiles/ultra_sonic_node.dir/src/ultra_sonic_node.cpp.o: /home/pi/MyLocalGit/snowbird/src/ultra_sonic/include/ultra_sonic/ultraSonic.h
+ultra_sonic/CMakeFiles/ultra_sonic_node.dir/src/ultra_sonic_node.cpp.o: /home/pi/MyLocalGit/snowbird/src/ultra_sonic/include/ultra_sonic/ultra_sonic_cfg.h
 ultra_sonic/CMakeFiles/ultra_sonic_node.dir/src/ultra_sonic_node.cpp.o: /home/pi/MyLocalGit/snowbird/src/ultra_sonic/src/ultra_sonic_node.cpp
-ultra_sonic/CMakeFiles/ultra_sonic_node.dir/src/ultra_sonic_node.cpp.o: /home/pi/snowbird/src/ultra_sonic/include/ultra_sonic/ultraSonic.h
-ultra_sonic/CMakeFiles/ultra_sonic_node.dir/src/ultra_sonic_node.cpp.o: /home/pi/snowbird/src/ultra_sonic/include/ultra_sonic/ultra_sonic_cfg.h
 ultra_sonic/CMakeFiles/ultra_sonic_node.dir/src/ultra_sonic_node.cpp.o: /opt/ros/melodic/include/ros/advertise_options.h
 ultra_sonic/CMakeFiles/ultra_sonic_node.dir/src/ultra_sonic_node.cpp.o: /opt/ros/melodic/include/ros/advertise_service_options.h
 ultra_sonic/CMakeFiles/ultra_sonic_node.dir/src/ultra_sonic_node.cpp.o: /opt/ros/melodic/include/ros/assert.h
@@ -83,6 +84,7 @@ ultra_sonic/CMakeFiles/ultra_sonic_node.dir/src/ultra_sonic_node.cpp.o: /opt/ros
 ultra_sonic/CMakeFiles/ultra_sonic_node.dir/src/ultra_sonic_node.cpp.o: /opt/ros/melodic/include/ros/message.h
 ultra_sonic/CMakeFiles/ultra_sonic_node.dir/src/ultra_sonic_node.cpp.o: /opt/ros/melodic/include/ros/message_event.h
 ultra_sonic/CMakeFiles/ultra_sonic_node.dir/src/ultra_sonic_node.cpp.o: /opt/ros/melodic/include/ros/message_forward.h
+ultra_sonic/CMakeFiles/ultra_sonic_node.dir/src/ultra_sonic_node.cpp.o: /opt/ros/melodic/include/ros/message_operations.h
 ultra_sonic/CMakeFiles/ultra_sonic_node.dir/src/ultra_sonic_node.cpp.o: /opt/ros/melodic/include/ros/message_traits.h
 ultra_sonic/CMakeFiles/ultra_sonic_node.dir/src/ultra_sonic_node.cpp.o: /opt/ros/melodic/include/ros/names.h
 ultra_sonic/CMakeFiles/ultra_sonic_node.dir/src/ultra_sonic_node.cpp.o: /opt/ros/melodic/include/ros/node_handle.h

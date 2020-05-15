@@ -662,17 +662,160 @@ std_msgs_generate_messages_eus/fast:
 .PHONY : std_msgs_generate_messages_eus/fast
 
 #=============================================================================
-# Target rules for targets named hall_sensor_node
+# Target rules for targets named hall_sensor_generate_messages_eus
 
 # Build rule for target.
-hall_sensor_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 hall_sensor_node
-.PHONY : hall_sensor_node
+hall_sensor_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hall_sensor_generate_messages_eus
+.PHONY : hall_sensor_generate_messages_eus
 
 # fast build rule for target.
-hall_sensor_node/fast:
-	$(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_node.dir/build.make hall_sensor/CMakeFiles/hall_sensor_node.dir/build
-.PHONY : hall_sensor_node/fast
+hall_sensor_generate_messages_eus/fast:
+	$(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_generate_messages_eus.dir/build.make hall_sensor/CMakeFiles/hall_sensor_generate_messages_eus.dir/build
+.PHONY : hall_sensor_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named hall_sensor_generate_messages
+
+# Build rule for target.
+hall_sensor_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hall_sensor_generate_messages
+.PHONY : hall_sensor_generate_messages
+
+# fast build rule for target.
+hall_sensor_generate_messages/fast:
+	$(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_generate_messages.dir/build.make hall_sensor/CMakeFiles/hall_sensor_generate_messages.dir/build
+.PHONY : hall_sensor_generate_messages/fast
+
+#=============================================================================
+# Target rules for targets named hall_sensor_generate_messages_cpp
+
+# Build rule for target.
+hall_sensor_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hall_sensor_generate_messages_cpp
+.PHONY : hall_sensor_generate_messages_cpp
+
+# fast build rule for target.
+hall_sensor_generate_messages_cpp/fast:
+	$(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_generate_messages_cpp.dir/build.make hall_sensor/CMakeFiles/hall_sensor_generate_messages_cpp.dir/build
+.PHONY : hall_sensor_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named hall_sensor_geneus
+
+# Build rule for target.
+hall_sensor_geneus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hall_sensor_geneus
+.PHONY : hall_sensor_geneus
+
+# fast build rule for target.
+hall_sensor_geneus/fast:
+	$(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_geneus.dir/build.make hall_sensor/CMakeFiles/hall_sensor_geneus.dir/build
+.PHONY : hall_sensor_geneus/fast
+
+#=============================================================================
+# Target rules for targets named hall_sensor_generate_messages_lisp
+
+# Build rule for target.
+hall_sensor_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hall_sensor_generate_messages_lisp
+.PHONY : hall_sensor_generate_messages_lisp
+
+# fast build rule for target.
+hall_sensor_generate_messages_lisp/fast:
+	$(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_generate_messages_lisp.dir/build.make hall_sensor/CMakeFiles/hall_sensor_generate_messages_lisp.dir/build
+.PHONY : hall_sensor_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named _hall_sensor_generate_messages_check_deps_Wheels_vel
+
+# Build rule for target.
+_hall_sensor_generate_messages_check_deps_Wheels_vel: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _hall_sensor_generate_messages_check_deps_Wheels_vel
+.PHONY : _hall_sensor_generate_messages_check_deps_Wheels_vel
+
+# fast build rule for target.
+_hall_sensor_generate_messages_check_deps_Wheels_vel/fast:
+	$(MAKE) -f hall_sensor/CMakeFiles/_hall_sensor_generate_messages_check_deps_Wheels_vel.dir/build.make hall_sensor/CMakeFiles/_hall_sensor_generate_messages_check_deps_Wheels_vel.dir/build
+.PHONY : _hall_sensor_generate_messages_check_deps_Wheels_vel/fast
+
+#=============================================================================
+# Target rules for targets named hall_sensor_genlisp
+
+# Build rule for target.
+hall_sensor_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hall_sensor_genlisp
+.PHONY : hall_sensor_genlisp
+
+# fast build rule for target.
+hall_sensor_genlisp/fast:
+	$(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_genlisp.dir/build.make hall_sensor/CMakeFiles/hall_sensor_genlisp.dir/build
+.PHONY : hall_sensor_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named hall_sensor_gencpp
+
+# Build rule for target.
+hall_sensor_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hall_sensor_gencpp
+.PHONY : hall_sensor_gencpp
+
+# fast build rule for target.
+hall_sensor_gencpp/fast:
+	$(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_gencpp.dir/build.make hall_sensor/CMakeFiles/hall_sensor_gencpp.dir/build
+.PHONY : hall_sensor_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named hall_sensor_gennodejs
+
+# Build rule for target.
+hall_sensor_gennodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hall_sensor_gennodejs
+.PHONY : hall_sensor_gennodejs
+
+# fast build rule for target.
+hall_sensor_gennodejs/fast:
+	$(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_gennodejs.dir/build.make hall_sensor/CMakeFiles/hall_sensor_gennodejs.dir/build
+.PHONY : hall_sensor_gennodejs/fast
+
+#=============================================================================
+# Target rules for targets named hall_sensor_generate_messages_py
+
+# Build rule for target.
+hall_sensor_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hall_sensor_generate_messages_py
+.PHONY : hall_sensor_generate_messages_py
+
+# fast build rule for target.
+hall_sensor_generate_messages_py/fast:
+	$(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_generate_messages_py.dir/build.make hall_sensor/CMakeFiles/hall_sensor_generate_messages_py.dir/build
+.PHONY : hall_sensor_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named hall_sensor_generate_messages_nodejs
+
+# Build rule for target.
+hall_sensor_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hall_sensor_generate_messages_nodejs
+.PHONY : hall_sensor_generate_messages_nodejs
+
+# fast build rule for target.
+hall_sensor_generate_messages_nodejs/fast:
+	$(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_generate_messages_nodejs.dir/build.make hall_sensor/CMakeFiles/hall_sensor_generate_messages_nodejs.dir/build
+.PHONY : hall_sensor_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named hall_sensor_genpy
+
+# Build rule for target.
+hall_sensor_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hall_sensor_genpy
+.PHONY : hall_sensor_genpy
+
+# fast build rule for target.
+hall_sensor_genpy/fast:
+	$(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_genpy.dir/build.make hall_sensor/CMakeFiles/hall_sensor_genpy.dir/build
+.PHONY : hall_sensor_genpy/fast
 
 #=============================================================================
 # Target rules for targets named hall_sensor
@@ -686,6 +829,19 @@ hall_sensor: cmake_check_build_system
 hall_sensor/fast:
 	$(MAKE) -f hall_sensor/CMakeFiles/hall_sensor.dir/build.make hall_sensor/CMakeFiles/hall_sensor.dir/build
 .PHONY : hall_sensor/fast
+
+#=============================================================================
+# Target rules for targets named hall_sensor_node
+
+# Build rule for target.
+hall_sensor_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hall_sensor_node
+.PHONY : hall_sensor_node
+
+# fast build rule for target.
+hall_sensor_node/fast:
+	$(MAKE) -f hall_sensor/CMakeFiles/hall_sensor_node.dir/build.make hall_sensor/CMakeFiles/hall_sensor_node.dir/build
+.PHONY : hall_sensor_node/fast
 
 #=============================================================================
 # Target rules for targets named sensor_msgs_generate_messages_cpp
@@ -844,6 +1000,136 @@ rplidarNode/fast:
 .PHONY : rplidarNode/fast
 
 #=============================================================================
+# Target rules for targets named ultra_sonic_generate_messages
+
+# Build rule for target.
+ultra_sonic_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ultra_sonic_generate_messages
+.PHONY : ultra_sonic_generate_messages
+
+# fast build rule for target.
+ultra_sonic_generate_messages/fast:
+	$(MAKE) -f ultra_sonic/CMakeFiles/ultra_sonic_generate_messages.dir/build.make ultra_sonic/CMakeFiles/ultra_sonic_generate_messages.dir/build
+.PHONY : ultra_sonic_generate_messages/fast
+
+#=============================================================================
+# Target rules for targets named ultra_sonic_gencpp
+
+# Build rule for target.
+ultra_sonic_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ultra_sonic_gencpp
+.PHONY : ultra_sonic_gencpp
+
+# fast build rule for target.
+ultra_sonic_gencpp/fast:
+	$(MAKE) -f ultra_sonic/CMakeFiles/ultra_sonic_gencpp.dir/build.make ultra_sonic/CMakeFiles/ultra_sonic_gencpp.dir/build
+.PHONY : ultra_sonic_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named ultra_sonic_generate_messages_cpp
+
+# Build rule for target.
+ultra_sonic_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ultra_sonic_generate_messages_cpp
+.PHONY : ultra_sonic_generate_messages_cpp
+
+# fast build rule for target.
+ultra_sonic_generate_messages_cpp/fast:
+	$(MAKE) -f ultra_sonic/CMakeFiles/ultra_sonic_generate_messages_cpp.dir/build.make ultra_sonic/CMakeFiles/ultra_sonic_generate_messages_cpp.dir/build
+.PHONY : ultra_sonic_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named ultra_sonic_generate_messages_eus
+
+# Build rule for target.
+ultra_sonic_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ultra_sonic_generate_messages_eus
+.PHONY : ultra_sonic_generate_messages_eus
+
+# fast build rule for target.
+ultra_sonic_generate_messages_eus/fast:
+	$(MAKE) -f ultra_sonic/CMakeFiles/ultra_sonic_generate_messages_eus.dir/build.make ultra_sonic/CMakeFiles/ultra_sonic_generate_messages_eus.dir/build
+.PHONY : ultra_sonic_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named _ultra_sonic_generate_messages_check_deps_Ultra_dis
+
+# Build rule for target.
+_ultra_sonic_generate_messages_check_deps_Ultra_dis: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _ultra_sonic_generate_messages_check_deps_Ultra_dis
+.PHONY : _ultra_sonic_generate_messages_check_deps_Ultra_dis
+
+# fast build rule for target.
+_ultra_sonic_generate_messages_check_deps_Ultra_dis/fast:
+	$(MAKE) -f ultra_sonic/CMakeFiles/_ultra_sonic_generate_messages_check_deps_Ultra_dis.dir/build.make ultra_sonic/CMakeFiles/_ultra_sonic_generate_messages_check_deps_Ultra_dis.dir/build
+.PHONY : _ultra_sonic_generate_messages_check_deps_Ultra_dis/fast
+
+#=============================================================================
+# Target rules for targets named ultra_sonic_generate_messages_nodejs
+
+# Build rule for target.
+ultra_sonic_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ultra_sonic_generate_messages_nodejs
+.PHONY : ultra_sonic_generate_messages_nodejs
+
+# fast build rule for target.
+ultra_sonic_generate_messages_nodejs/fast:
+	$(MAKE) -f ultra_sonic/CMakeFiles/ultra_sonic_generate_messages_nodejs.dir/build.make ultra_sonic/CMakeFiles/ultra_sonic_generate_messages_nodejs.dir/build
+.PHONY : ultra_sonic_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named ultra_sonic_genlisp
+
+# Build rule for target.
+ultra_sonic_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ultra_sonic_genlisp
+.PHONY : ultra_sonic_genlisp
+
+# fast build rule for target.
+ultra_sonic_genlisp/fast:
+	$(MAKE) -f ultra_sonic/CMakeFiles/ultra_sonic_genlisp.dir/build.make ultra_sonic/CMakeFiles/ultra_sonic_genlisp.dir/build
+.PHONY : ultra_sonic_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named ultra_sonic_geneus
+
+# Build rule for target.
+ultra_sonic_geneus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ultra_sonic_geneus
+.PHONY : ultra_sonic_geneus
+
+# fast build rule for target.
+ultra_sonic_geneus/fast:
+	$(MAKE) -f ultra_sonic/CMakeFiles/ultra_sonic_geneus.dir/build.make ultra_sonic/CMakeFiles/ultra_sonic_geneus.dir/build
+.PHONY : ultra_sonic_geneus/fast
+
+#=============================================================================
+# Target rules for targets named ultra_sonic_gennodejs
+
+# Build rule for target.
+ultra_sonic_gennodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ultra_sonic_gennodejs
+.PHONY : ultra_sonic_gennodejs
+
+# fast build rule for target.
+ultra_sonic_gennodejs/fast:
+	$(MAKE) -f ultra_sonic/CMakeFiles/ultra_sonic_gennodejs.dir/build.make ultra_sonic/CMakeFiles/ultra_sonic_gennodejs.dir/build
+.PHONY : ultra_sonic_gennodejs/fast
+
+#=============================================================================
+# Target rules for targets named ultra_sonic_generate_messages_lisp
+
+# Build rule for target.
+ultra_sonic_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ultra_sonic_generate_messages_lisp
+.PHONY : ultra_sonic_generate_messages_lisp
+
+# fast build rule for target.
+ultra_sonic_generate_messages_lisp/fast:
+	$(MAKE) -f ultra_sonic/CMakeFiles/ultra_sonic_generate_messages_lisp.dir/build.make ultra_sonic/CMakeFiles/ultra_sonic_generate_messages_lisp.dir/build
+.PHONY : ultra_sonic_generate_messages_lisp/fast
+
+#=============================================================================
 # Target rules for targets named ultra_sonic
 
 # Build rule for target.
@@ -857,6 +1143,19 @@ ultra_sonic/fast:
 .PHONY : ultra_sonic/fast
 
 #=============================================================================
+# Target rules for targets named ultra_sonic_generate_messages_py
+
+# Build rule for target.
+ultra_sonic_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ultra_sonic_generate_messages_py
+.PHONY : ultra_sonic_generate_messages_py
+
+# fast build rule for target.
+ultra_sonic_generate_messages_py/fast:
+	$(MAKE) -f ultra_sonic/CMakeFiles/ultra_sonic_generate_messages_py.dir/build.make ultra_sonic/CMakeFiles/ultra_sonic_generate_messages_py.dir/build
+.PHONY : ultra_sonic_generate_messages_py/fast
+
+#=============================================================================
 # Target rules for targets named ultra_sonic_node
 
 # Build rule for target.
@@ -868,6 +1167,19 @@ ultra_sonic_node: cmake_check_build_system
 ultra_sonic_node/fast:
 	$(MAKE) -f ultra_sonic/CMakeFiles/ultra_sonic_node.dir/build.make ultra_sonic/CMakeFiles/ultra_sonic_node.dir/build
 .PHONY : ultra_sonic_node/fast
+
+#=============================================================================
+# Target rules for targets named ultra_sonic_genpy
+
+# Build rule for target.
+ultra_sonic_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ultra_sonic_genpy
+.PHONY : ultra_sonic_genpy
+
+# fast build rule for target.
+ultra_sonic_genpy/fast:
+	$(MAKE) -f ultra_sonic/CMakeFiles/ultra_sonic_genpy.dir/build.make ultra_sonic/CMakeFiles/ultra_sonic_genpy.dir/build
+.PHONY : ultra_sonic_genpy/fast
 
 # Help Target
 help:
@@ -920,8 +1232,20 @@ help:
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_eus"
-	@echo "... hall_sensor_node"
+	@echo "... hall_sensor_generate_messages_eus"
+	@echo "... hall_sensor_generate_messages"
+	@echo "... hall_sensor_generate_messages_cpp"
+	@echo "... hall_sensor_geneus"
+	@echo "... hall_sensor_generate_messages_lisp"
+	@echo "... _hall_sensor_generate_messages_check_deps_Wheels_vel"
+	@echo "... hall_sensor_genlisp"
+	@echo "... hall_sensor_gencpp"
+	@echo "... hall_sensor_gennodejs"
+	@echo "... hall_sensor_generate_messages_py"
+	@echo "... hall_sensor_generate_messages_nodejs"
+	@echo "... hall_sensor_genpy"
 	@echo "... hall_sensor"
+	@echo "... hall_sensor_node"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... sensor_msgs_generate_messages_nodejs"
@@ -934,8 +1258,20 @@ help:
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... rplidarNode"
+	@echo "... ultra_sonic_generate_messages"
+	@echo "... ultra_sonic_gencpp"
+	@echo "... ultra_sonic_generate_messages_cpp"
+	@echo "... ultra_sonic_generate_messages_eus"
+	@echo "... _ultra_sonic_generate_messages_check_deps_Ultra_dis"
+	@echo "... ultra_sonic_generate_messages_nodejs"
+	@echo "... ultra_sonic_genlisp"
+	@echo "... ultra_sonic_geneus"
+	@echo "... ultra_sonic_gennodejs"
+	@echo "... ultra_sonic_generate_messages_lisp"
 	@echo "... ultra_sonic"
+	@echo "... ultra_sonic_generate_messages_py"
 	@echo "... ultra_sonic_node"
+	@echo "... ultra_sonic_genpy"
 .PHONY : help
 
 
