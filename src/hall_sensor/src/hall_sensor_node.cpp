@@ -32,7 +32,7 @@ int main (int argc, char** argv)
    ros::NodeHandle n;
 
    ros::Publisher wheels_vel_pub = n.advertise<hall_sensor::Wheels_vel>("/whl_vel",
-		   10);
+         10);
 
    ros::Rate loop_rate(HALL_LOOP_RATE);
 
@@ -41,7 +41,7 @@ int main (int argc, char** argv)
 
    /*Init wheel pulse*/
    Wheels whl[WHLMAX] = {Wheels(WHLPUL_FL), Wheels(WHLPUL_FR),
-   			 Wheels(WHLPUL_RL), Wheels(WHLPUL_RR)};
+             Wheels(WHLPUL_RL), Wheels(WHLPUL_RR)};
 
    while (ros::ok())
    {
@@ -59,15 +59,15 @@ int main (int argc, char** argv)
       {
          count = 0;
          for (iWhl = 0; iWhl < WHLMAX; iWhl++)
-	 {
+         {
             whl[iWhl].updateSpeed(tickDiv);
             ROS_INFO("wheel speed [%d]: %.2f",iWhl, whl[iWhl].getSpeed());
-	    whl[iWhl].whlPulCntReset();
-	 }
+            whl[iWhl].whlPulCntReset();
+         }
       }
       if(count_msg >= HALL_LOOP_RATE/WHLVEL_MSG_HZ)
       {
-	 count_msg = 0;
+         count_msg = 0;
          whlVel_msg.fl = whl[FL].getSpeed();
          whlVel_msg.fr = whl[FR].getSpeed();
          whlVel_msg.rl = whl[RL].getSpeed();
