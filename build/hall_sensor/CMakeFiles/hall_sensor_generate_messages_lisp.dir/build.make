@@ -53,16 +53,16 @@ CMAKE_BINARY_DIR = /home/pi/MyLocalGit/snowbird/build
 # Include the progress variables for this target.
 include hall_sensor/CMakeFiles/hall_sensor_generate_messages_lisp.dir/progress.make
 
-hall_sensor/CMakeFiles/hall_sensor_generate_messages_lisp: /home/pi/MyLocalGit/snowbird/devel/share/common-lisp/ros/hall_sensor/msg/Wheels_vel.lisp
+hall_sensor/CMakeFiles/hall_sensor_generate_messages_lisp: /home/pi/MyLocalGit/snowbird/devel/share/common-lisp/ros/hall_sensor/msg/Whls_vel.lisp
 
 
-/home/pi/MyLocalGit/snowbird/devel/share/common-lisp/ros/hall_sensor/msg/Wheels_vel.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/pi/MyLocalGit/snowbird/devel/share/common-lisp/ros/hall_sensor/msg/Wheels_vel.lisp: /home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Wheels_vel.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/MyLocalGit/snowbird/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from hall_sensor/Wheels_vel.msg"
-	cd /home/pi/MyLocalGit/snowbird/build/hall_sensor && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Wheels_vel.msg -Ihall_sensor:/home/pi/MyLocalGit/snowbird/src/hall_sensor/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p hall_sensor -o /home/pi/MyLocalGit/snowbird/devel/share/common-lisp/ros/hall_sensor/msg
+/home/pi/MyLocalGit/snowbird/devel/share/common-lisp/ros/hall_sensor/msg/Whls_vel.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/pi/MyLocalGit/snowbird/devel/share/common-lisp/ros/hall_sensor/msg/Whls_vel.lisp: /home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Whls_vel.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/MyLocalGit/snowbird/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from hall_sensor/Whls_vel.msg"
+	cd /home/pi/MyLocalGit/snowbird/build/hall_sensor && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Whls_vel.msg -Ihall_sensor:/home/pi/MyLocalGit/snowbird/src/hall_sensor/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p hall_sensor -o /home/pi/MyLocalGit/snowbird/devel/share/common-lisp/ros/hall_sensor/msg
 
 hall_sensor_generate_messages_lisp: hall_sensor/CMakeFiles/hall_sensor_generate_messages_lisp
-hall_sensor_generate_messages_lisp: /home/pi/MyLocalGit/snowbird/devel/share/common-lisp/ros/hall_sensor/msg/Wheels_vel.lisp
+hall_sensor_generate_messages_lisp: /home/pi/MyLocalGit/snowbird/devel/share/common-lisp/ros/hall_sensor/msg/Whls_vel.lisp
 hall_sensor_generate_messages_lisp: hall_sensor/CMakeFiles/hall_sensor_generate_messages_lisp.dir/build.make
 
 .PHONY : hall_sensor_generate_messages_lisp

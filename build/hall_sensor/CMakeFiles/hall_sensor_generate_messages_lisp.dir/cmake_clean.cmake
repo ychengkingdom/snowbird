@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/hall_sensor_generate_messages_lisp"
-  "/home/pi/MyLocalGit/snowbird/devel/share/common-lisp/ros/hall_sensor/msg/Wheels_vel.lisp"
+  "/home/pi/MyLocalGit/snowbird/devel/share/common-lisp/ros/hall_sensor/msg/Whls_vel.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -53,17 +53,17 @@ CMAKE_BINARY_DIR = /home/pi/MyLocalGit/snowbird/build
 # Include the progress variables for this target.
 include hall_sensor/CMakeFiles/hall_sensor_generate_messages_cpp.dir/progress.make
 
-hall_sensor/CMakeFiles/hall_sensor_generate_messages_cpp: /home/pi/MyLocalGit/snowbird/devel/include/hall_sensor/Wheels_vel.h
+hall_sensor/CMakeFiles/hall_sensor_generate_messages_cpp: /home/pi/MyLocalGit/snowbird/devel/include/hall_sensor/Whls_vel.h
 
 
-/home/pi/MyLocalGit/snowbird/devel/include/hall_sensor/Wheels_vel.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
-/home/pi/MyLocalGit/snowbird/devel/include/hall_sensor/Wheels_vel.h: /home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Wheels_vel.msg
-/home/pi/MyLocalGit/snowbird/devel/include/hall_sensor/Wheels_vel.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/MyLocalGit/snowbird/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from hall_sensor/Wheels_vel.msg"
-	cd /home/pi/MyLocalGit/snowbird/src/hall_sensor && /home/pi/MyLocalGit/snowbird/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Wheels_vel.msg -Ihall_sensor:/home/pi/MyLocalGit/snowbird/src/hall_sensor/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p hall_sensor -o /home/pi/MyLocalGit/snowbird/devel/include/hall_sensor -e /opt/ros/melodic/share/gencpp/cmake/..
+/home/pi/MyLocalGit/snowbird/devel/include/hall_sensor/Whls_vel.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
+/home/pi/MyLocalGit/snowbird/devel/include/hall_sensor/Whls_vel.h: /home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Whls_vel.msg
+/home/pi/MyLocalGit/snowbird/devel/include/hall_sensor/Whls_vel.h: /opt/ros/melodic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/MyLocalGit/snowbird/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from hall_sensor/Whls_vel.msg"
+	cd /home/pi/MyLocalGit/snowbird/src/hall_sensor && /home/pi/MyLocalGit/snowbird/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Whls_vel.msg -Ihall_sensor:/home/pi/MyLocalGit/snowbird/src/hall_sensor/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p hall_sensor -o /home/pi/MyLocalGit/snowbird/devel/include/hall_sensor -e /opt/ros/melodic/share/gencpp/cmake/..
 
 hall_sensor_generate_messages_cpp: hall_sensor/CMakeFiles/hall_sensor_generate_messages_cpp
-hall_sensor_generate_messages_cpp: /home/pi/MyLocalGit/snowbird/devel/include/hall_sensor/Wheels_vel.h
+hall_sensor_generate_messages_cpp: /home/pi/MyLocalGit/snowbird/devel/include/hall_sensor/Whls_vel.h
 hall_sensor_generate_messages_cpp: hall_sensor/CMakeFiles/hall_sensor_generate_messages_cpp.dir/build.make
 
 .PHONY : hall_sensor_generate_messages_cpp

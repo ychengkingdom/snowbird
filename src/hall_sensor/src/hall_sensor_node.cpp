@@ -5,7 +5,7 @@
 ***********************************************************************/
 #include <ros/ros.h>
 #include "wheels.h"
-#include "hall_sensor/Wheels_vel.h"
+#include "hall_sensor/Whls_vel.h"
 
 #define HALL_LOOP_RATE 500
 #define WHLVEL_MSG_HZ  10
@@ -32,8 +32,8 @@ int main (int argc, char** argv)
   ros::NodeHandle n;
   
 
-  ros::Publisher wheels_vel_pub = n.advertise<hall_sensor::Wheels_vel>("/whl_vel",
-                                                              10);
+  ros::Publisher whls_vel_pub = n.advertise<hall_sensor::Whls_vel>(
+                                              "/whl_vel", 10);
 
   ros::Rate loop_rate(HALL_LOOP_RATE);
 
@@ -46,7 +46,7 @@ int main (int argc, char** argv)
 
   while (ros::ok())
   {
-    hall_sensor::Wheels_vel whlVel_msg;
+    hall_sensor::Whls_vel whlVel_msg;
 
     count++;
     count_msg++;
@@ -73,7 +73,7 @@ int main (int argc, char** argv)
       whlVel_msg.fr = whl[FR].getSpeed();
       whlVel_msg.rl = whl[RL].getSpeed();
       whlVel_msg.rr = whl[RR].getSpeed();
-      wheels_vel_pub.publish(whlVel_msg);
+      whls_vel_pub.publish(whlVel_msg);
     }
     /*gurantee the refresh period*/
     loop_rate.sleep();

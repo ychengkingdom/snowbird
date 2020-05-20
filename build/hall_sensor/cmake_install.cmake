@@ -38,7 +38,7 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hall_sensor/msg" TYPE FILE FILES "/home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Wheels_vel.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hall_sensor/msg" TYPE FILE FILES "/home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Whls_vel.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

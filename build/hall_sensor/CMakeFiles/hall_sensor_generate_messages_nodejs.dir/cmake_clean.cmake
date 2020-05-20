@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/hall_sensor_generate_messages_nodejs"
-  "/home/pi/MyLocalGit/snowbird/devel/share/gennodejs/ros/hall_sensor/msg/Wheels_vel.js"
+  "/home/pi/MyLocalGit/snowbird/devel/share/gennodejs/ros/hall_sensor/msg/Whls_vel.js"
 )
 
 # Per-language clean rules from dependency scanning.

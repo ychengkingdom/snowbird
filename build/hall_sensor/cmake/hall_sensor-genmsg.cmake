@@ -17,9 +17,9 @@ add_custom_target(hall_sensor_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Wheels_vel.msg" NAME_WE)
+get_filename_component(_filename "/home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Whls_vel.msg" NAME_WE)
 add_custom_target(_hall_sensor_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hall_sensor" "/home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Wheels_vel.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hall_sensor" "/home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Whls_vel.msg" ""
 )
 
 #
@@ -29,7 +29,7 @@ add_custom_target(_hall_sensor_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(hall_sensor
-  "/home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Wheels_vel.msg"
+  "/home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Whls_vel.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hall_sensor
@@ -49,7 +49,7 @@ add_custom_target(hall_sensor_generate_messages_cpp
 add_dependencies(hall_sensor_generate_messages hall_sensor_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Wheels_vel.msg" NAME_WE)
+get_filename_component(_filename "/home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Whls_vel.msg" NAME_WE)
 add_dependencies(hall_sensor_generate_messages_cpp _hall_sensor_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -62,7 +62,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS hall_sensor_generate_messages_cpp)
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(hall_sensor
-  "/home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Wheels_vel.msg"
+  "/home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Whls_vel.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hall_sensor
@@ -82,7 +82,7 @@ add_custom_target(hall_sensor_generate_messages_eus
 add_dependencies(hall_sensor_generate_messages hall_sensor_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Wheels_vel.msg" NAME_WE)
+get_filename_component(_filename "/home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Whls_vel.msg" NAME_WE)
 add_dependencies(hall_sensor_generate_messages_eus _hall_sensor_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -95,7 +95,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS hall_sensor_generate_messages_eus)
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(hall_sensor
-  "/home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Wheels_vel.msg"
+  "/home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Whls_vel.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hall_sensor
@@ -115,7 +115,7 @@ add_custom_target(hall_sensor_generate_messages_lisp
 add_dependencies(hall_sensor_generate_messages hall_sensor_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Wheels_vel.msg" NAME_WE)
+get_filename_component(_filename "/home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Whls_vel.msg" NAME_WE)
 add_dependencies(hall_sensor_generate_messages_lisp _hall_sensor_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -128,7 +128,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS hall_sensor_generate_messages_lisp)
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(hall_sensor
-  "/home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Wheels_vel.msg"
+  "/home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Whls_vel.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hall_sensor
@@ -148,7 +148,7 @@ add_custom_target(hall_sensor_generate_messages_nodejs
 add_dependencies(hall_sensor_generate_messages hall_sensor_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Wheels_vel.msg" NAME_WE)
+get_filename_component(_filename "/home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Whls_vel.msg" NAME_WE)
 add_dependencies(hall_sensor_generate_messages_nodejs _hall_sensor_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -161,7 +161,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS hall_sensor_generate_messages_nodej
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(hall_sensor
-  "/home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Wheels_vel.msg"
+  "/home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Whls_vel.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hall_sensor
@@ -181,7 +181,7 @@ add_custom_target(hall_sensor_generate_messages_py
 add_dependencies(hall_sensor_generate_messages hall_sensor_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Wheels_vel.msg" NAME_WE)
+get_filename_component(_filename "/home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Whls_vel.msg" NAME_WE)
 add_dependencies(hall_sensor_generate_messages_py _hall_sensor_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

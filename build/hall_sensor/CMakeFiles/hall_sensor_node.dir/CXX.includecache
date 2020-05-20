@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/pi/MyLocalGit/snowbird/devel/include/hall_sensor/Wheels_vel.h
+/home/pi/MyLocalGit/snowbird/devel/include/hall_sensor/Whls_vel.h
 string
 -
 vector
@@ -37,8 +37,8 @@ ros/ros.h
 -
 wheels.h
 /home/pi/MyLocalGit/snowbird/src/hall_sensor/src/wheels.h
-hall_sensor/Wheels_vel.h
-/home/pi/MyLocalGit/snowbird/src/hall_sensor/src/hall_sensor/Wheels_vel.h
+hall_sensor/Whls_vel.h
+/home/pi/MyLocalGit/snowbird/src/hall_sensor/src/hall_sensor/Whls_vel.h
 
 /opt/ros/melodic/include/ros/advertise_options.h
 ros/forwards.h

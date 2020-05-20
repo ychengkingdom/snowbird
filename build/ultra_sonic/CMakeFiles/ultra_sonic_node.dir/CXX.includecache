@@ -34,6 +34,12 @@ wiringPi.h
 bcm2835.h
 /home/pi/MyLocalGit/snowbird/src/ultra_sonic/include/ultra_sonic/bcm2835.h
 
+/home/pi/MyLocalGit/snowbird/src/ultra_sonic/src/ultraSonic.cpp
+ros/ros.h
+-
+ultraSonic.h
+/home/pi/MyLocalGit/snowbird/src/ultra_sonic/src/ultraSonic.h
+
 /home/pi/MyLocalGit/snowbird/src/ultra_sonic/src/ultra_sonic_node.cpp
 ros/ros.h
 -

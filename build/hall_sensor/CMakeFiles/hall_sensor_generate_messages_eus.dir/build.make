@@ -53,21 +53,21 @@ CMAKE_BINARY_DIR = /home/pi/MyLocalGit/snowbird/build
 # Include the progress variables for this target.
 include hall_sensor/CMakeFiles/hall_sensor_generate_messages_eus.dir/progress.make
 
-hall_sensor/CMakeFiles/hall_sensor_generate_messages_eus: /home/pi/MyLocalGit/snowbird/devel/share/roseus/ros/hall_sensor/msg/Wheels_vel.l
+hall_sensor/CMakeFiles/hall_sensor_generate_messages_eus: /home/pi/MyLocalGit/snowbird/devel/share/roseus/ros/hall_sensor/msg/Whls_vel.l
 hall_sensor/CMakeFiles/hall_sensor_generate_messages_eus: /home/pi/MyLocalGit/snowbird/devel/share/roseus/ros/hall_sensor/manifest.l
 
 
-/home/pi/MyLocalGit/snowbird/devel/share/roseus/ros/hall_sensor/msg/Wheels_vel.l: /opt/ros/melodic/lib/geneus/gen_eus.py
-/home/pi/MyLocalGit/snowbird/devel/share/roseus/ros/hall_sensor/msg/Wheels_vel.l: /home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Wheels_vel.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/MyLocalGit/snowbird/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from hall_sensor/Wheels_vel.msg"
-	cd /home/pi/MyLocalGit/snowbird/build/hall_sensor && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Wheels_vel.msg -Ihall_sensor:/home/pi/MyLocalGit/snowbird/src/hall_sensor/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p hall_sensor -o /home/pi/MyLocalGit/snowbird/devel/share/roseus/ros/hall_sensor/msg
+/home/pi/MyLocalGit/snowbird/devel/share/roseus/ros/hall_sensor/msg/Whls_vel.l: /opt/ros/melodic/lib/geneus/gen_eus.py
+/home/pi/MyLocalGit/snowbird/devel/share/roseus/ros/hall_sensor/msg/Whls_vel.l: /home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Whls_vel.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/MyLocalGit/snowbird/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from hall_sensor/Whls_vel.msg"
+	cd /home/pi/MyLocalGit/snowbird/build/hall_sensor && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Whls_vel.msg -Ihall_sensor:/home/pi/MyLocalGit/snowbird/src/hall_sensor/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p hall_sensor -o /home/pi/MyLocalGit/snowbird/devel/share/roseus/ros/hall_sensor/msg
 
 /home/pi/MyLocalGit/snowbird/devel/share/roseus/ros/hall_sensor/manifest.l: /opt/ros/melodic/lib/geneus/gen_eus.py
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/MyLocalGit/snowbird/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp manifest code for hall_sensor"
 	cd /home/pi/MyLocalGit/snowbird/build/hall_sensor && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/pi/MyLocalGit/snowbird/devel/share/roseus/ros/hall_sensor hall_sensor std_msgs
 
 hall_sensor_generate_messages_eus: hall_sensor/CMakeFiles/hall_sensor_generate_messages_eus
-hall_sensor_generate_messages_eus: /home/pi/MyLocalGit/snowbird/devel/share/roseus/ros/hall_sensor/msg/Wheels_vel.l
+hall_sensor_generate_messages_eus: /home/pi/MyLocalGit/snowbird/devel/share/roseus/ros/hall_sensor/msg/Whls_vel.l
 hall_sensor_generate_messages_eus: /home/pi/MyLocalGit/snowbird/devel/share/roseus/ros/hall_sensor/manifest.l
 hall_sensor_generate_messages_eus: hall_sensor/CMakeFiles/hall_sensor_generate_messages_eus.dir/build.make
 

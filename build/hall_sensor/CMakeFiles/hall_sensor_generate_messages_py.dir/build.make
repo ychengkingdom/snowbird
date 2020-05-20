@@ -53,22 +53,22 @@ CMAKE_BINARY_DIR = /home/pi/MyLocalGit/snowbird/build
 # Include the progress variables for this target.
 include hall_sensor/CMakeFiles/hall_sensor_generate_messages_py.dir/progress.make
 
-hall_sensor/CMakeFiles/hall_sensor_generate_messages_py: /home/pi/MyLocalGit/snowbird/devel/lib/python2.7/dist-packages/hall_sensor/msg/_Wheels_vel.py
+hall_sensor/CMakeFiles/hall_sensor_generate_messages_py: /home/pi/MyLocalGit/snowbird/devel/lib/python2.7/dist-packages/hall_sensor/msg/_Whls_vel.py
 hall_sensor/CMakeFiles/hall_sensor_generate_messages_py: /home/pi/MyLocalGit/snowbird/devel/lib/python2.7/dist-packages/hall_sensor/msg/__init__.py
 
 
-/home/pi/MyLocalGit/snowbird/devel/lib/python2.7/dist-packages/hall_sensor/msg/_Wheels_vel.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
-/home/pi/MyLocalGit/snowbird/devel/lib/python2.7/dist-packages/hall_sensor/msg/_Wheels_vel.py: /home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Wheels_vel.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/MyLocalGit/snowbird/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG hall_sensor/Wheels_vel"
-	cd /home/pi/MyLocalGit/snowbird/build/hall_sensor && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Wheels_vel.msg -Ihall_sensor:/home/pi/MyLocalGit/snowbird/src/hall_sensor/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p hall_sensor -o /home/pi/MyLocalGit/snowbird/devel/lib/python2.7/dist-packages/hall_sensor/msg
+/home/pi/MyLocalGit/snowbird/devel/lib/python2.7/dist-packages/hall_sensor/msg/_Whls_vel.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/pi/MyLocalGit/snowbird/devel/lib/python2.7/dist-packages/hall_sensor/msg/_Whls_vel.py: /home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Whls_vel.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/MyLocalGit/snowbird/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG hall_sensor/Whls_vel"
+	cd /home/pi/MyLocalGit/snowbird/build/hall_sensor && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Whls_vel.msg -Ihall_sensor:/home/pi/MyLocalGit/snowbird/src/hall_sensor/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p hall_sensor -o /home/pi/MyLocalGit/snowbird/devel/lib/python2.7/dist-packages/hall_sensor/msg
 
 /home/pi/MyLocalGit/snowbird/devel/lib/python2.7/dist-packages/hall_sensor/msg/__init__.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
-/home/pi/MyLocalGit/snowbird/devel/lib/python2.7/dist-packages/hall_sensor/msg/__init__.py: /home/pi/MyLocalGit/snowbird/devel/lib/python2.7/dist-packages/hall_sensor/msg/_Wheels_vel.py
+/home/pi/MyLocalGit/snowbird/devel/lib/python2.7/dist-packages/hall_sensor/msg/__init__.py: /home/pi/MyLocalGit/snowbird/devel/lib/python2.7/dist-packages/hall_sensor/msg/_Whls_vel.py
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/MyLocalGit/snowbird/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python msg __init__.py for hall_sensor"
 	cd /home/pi/MyLocalGit/snowbird/build/hall_sensor && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/pi/MyLocalGit/snowbird/devel/lib/python2.7/dist-packages/hall_sensor/msg --initpy
 
 hall_sensor_generate_messages_py: hall_sensor/CMakeFiles/hall_sensor_generate_messages_py
-hall_sensor_generate_messages_py: /home/pi/MyLocalGit/snowbird/devel/lib/python2.7/dist-packages/hall_sensor/msg/_Wheels_vel.py
+hall_sensor_generate_messages_py: /home/pi/MyLocalGit/snowbird/devel/lib/python2.7/dist-packages/hall_sensor/msg/_Whls_vel.py
 hall_sensor_generate_messages_py: /home/pi/MyLocalGit/snowbird/devel/lib/python2.7/dist-packages/hall_sensor/msg/__init__.py
 hall_sensor_generate_messages_py: hall_sensor/CMakeFiles/hall_sensor_generate_messages_py.dir/build.make
 

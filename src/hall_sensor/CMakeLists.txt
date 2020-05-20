@@ -50,7 +50,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate messages in the 'msg' folder
 add_message_files(
   FILES
-  Wheels_vel.msg
+  Whls_vel.msg
   #  Message2.msg
 )
 
@@ -119,8 +119,8 @@ catkin_package(
 include_directories(
  include
   ${catkin_INCLUDE_DIRS}
-/usr/include
-include/hall_sensor
+  /usr/include
+  include/hall_sensor
 )
 
 link_directories(
@@ -129,8 +129,8 @@ link_directories(
  /usr/lib
 )
 ## Declare a C++ library
- add_library(${PROJECT_NAME}
-   src/wheels.cpp
+add_library(${PROJECT_NAME}
+  src/wheels.cpp
 )
 
 ## Add cmake target dependencies of the library

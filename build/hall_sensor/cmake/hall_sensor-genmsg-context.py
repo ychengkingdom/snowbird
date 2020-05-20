@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Wheels_vel.msg"
+messages_str = "/home/pi/MyLocalGit/snowbird/src/hall_sensor/msg/Whls_vel.msg"
 services_str = ""
 pkg_name = "hall_sensor"
 dependencies_str = "std_msgs"
