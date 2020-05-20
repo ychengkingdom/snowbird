@@ -8,11 +8,11 @@
 
 Wheels::Wheels(int pin)
 {
-   m_speed = 0;
-   m_whlPul = 0;
-   m_whlSt = 1;
-   m_pin = pin;
-   pinMode(m_pin, INPUT);
+  m_speed = 0;
+  m_whlPul = 0;
+  m_whlSt = 1;
+  m_pin = pin;
+  pinMode(m_pin, INPUT);
 }
 
 Wheels::~Wheels()
@@ -22,24 +22,24 @@ Wheels::~Wheels()
 #if 0
 void Wheels::initHall(int whlPulID)
 {
-   pinMode(m_pin, INPUT);
+  pinMode(m_pin, INPUT);
 }
 #endif
 int Wheels::whlPulCnt()
 {
-   if ((digitalRead(m_pin) == 0)&&(m_whlSt == 1))
-   {
-      m_whlPul++;
-      m_whlSt = 0;
-   }
-   else if (digitalRead(m_pin) == 1)
-   {
-      m_whlSt = 1;
-   }
-   else
-   {
-   }
-   return m_whlPul;
+  if ((digitalRead(m_pin) == 0)&&(m_whlSt == 1))
+  {
+    m_whlPul++;
+    m_whlSt = 0;
+  }
+  else if (digitalRead(m_pin) == 1)
+  {
+    m_whlSt = 1;
+  }
+  else
+  {
+  }
+  return m_whlPul;
 }
 
 void Wheels::whlPulCntReset()
@@ -49,11 +49,11 @@ void Wheels::whlPulCntReset()
 
 void Wheels::updateSpeed(int tick)
 {
-   m_speed = tick * m_whlPul * WHLSPEED_FACTOR *3.14 * 0.001;
+  m_speed = tick * m_whlPul * WHLSPEED_FACTOR *3.14 * 0.001;
 }
 float Wheels::getSpeed()
 {
-   return m_speed;
+  return m_speed;
 }
 /***********************************************************************
  * Yc, Mar 13, 2020, Add file description and modulize orgnization

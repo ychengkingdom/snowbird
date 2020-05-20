@@ -11,20 +11,20 @@
 class Wheels
 {
  public:
-      Wheels(int pin);
-      virtual ~Wheels();
-     private:
-      float m_speed;
-      int m_whlPul;
-      bool m_whlSt;
-      int m_pin;
-     public:
-      /*Function declarations for wheel pulse counter*/
-      int whlPulCnt();
-      void whlPulCntReset();
-      void updateSpeed(int tick);
-      float getSpeed();
- };
+  Wheels(int pin);
+  virtual ~Wheels();
+ private:
+  float m_speed;
+  int m_whlPul;
+  bool m_whlSt;
+  int m_pin;
+ public:
+  /*Function declarations for wheel pulse counter*/
+  int whlPulCnt();
+  void whlPulCntReset();
+  void updateSpeed(int tick);
+  float getSpeed();
+};
 
 #endif
 
