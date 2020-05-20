@@ -491,6 +491,18 @@ rplidar_ros_SOURCE_DIR:STATIC=/home/pi/MyLocalGit/snowbird/src/rplidar_ros
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/melodic/share/sensor_msgs/cmake
 
+//Value Computed by CMake
+snbird_BINARY_DIR:STATIC=/home/pi/MyLocalGit/snowbird/build/snbird
+
+//Value Computed by CMake
+snbird_SOURCE_DIR:STATIC=/home/pi/MyLocalGit/snowbird/src/snbird
+
+//Value Computed by CMake
+snbird_dr_BINARY_DIR:STATIC=/home/pi/MyLocalGit/snowbird/build/snbird_dr
+
+//Value Computed by CMake
+snbird_dr_SOURCE_DIR:STATIC=/home/pi/MyLocalGit/snowbird/src/snbird_dr
+
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/melodic/share/std_msgs/cmake
 

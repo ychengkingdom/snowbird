@@ -131,8 +131,8 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/pi/MyLocalGit/snowbird/build/gtest/cmake_install.cmake")
-  include("/home/pi/MyLocalGit/snowbird/build/actuator/cmake_install.cmake")
-  include("/home/pi/MyLocalGit/snowbird/build/hall_sensor/cmake_install.cmake")
+  include("/home/pi/MyLocalGit/snowbird/build/snbird/cmake_install.cmake")
+  include("/home/pi/MyLocalGit/snowbird/build/snbird_dr/cmake_install.cmake")
   include("/home/pi/MyLocalGit/snowbird/build/rplidar_ros/cmake_install.cmake")
   include("/home/pi/MyLocalGit/snowbird/build/ultra_sonic/cmake_install.cmake")
 

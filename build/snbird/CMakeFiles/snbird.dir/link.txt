@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libsnbird.so -o /home/pi/MyLocalGit/snowbird/devel/lib/libsnbird.so CMakeFiles/snbird.dir/src/wheels.cpp.o  -L/home/pi/MyLocalGit/snowbird/src/snbird/include 

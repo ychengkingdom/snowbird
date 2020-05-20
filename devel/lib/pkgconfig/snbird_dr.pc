@@ -1,0 +1,8 @@
+prefix=/home/pi/MyLocalGit/snowbird/devel
+
+Name: snbird_dr
+Description: Description of snbird_dr
+Version: 0.0.0
+Cflags: -I/home/pi/MyLocalGit/snowbird/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_generation roscpp rospy std_msgs

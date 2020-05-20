@@ -1,0 +1,10 @@
+<launch>
+
+  <group ns="wheelSpeed">
+    <node pkg="snbird" name="snbird_node" type="snbird_node" output = "screen" />
+  </group>
+#  <group ns="ultraSonic">
+#    <node pkg="ultra_sonic" name="ultraSonic" type="ultra_sonic_node" output = "screen" />
+#  </group>
+
+</launch>
